@@ -1,12 +1,13 @@
+import RoundShape from '../../RoundShape'
 import './style.scss'
 
 const Home: React.FC<any> = () => {
     return (
         <main>
-            <div className='saturn' />
-            <div className='jupiter' />
-            <div className='terra' />
-            <div className='lua' />
+            <RoundShape className='saturn' />
+            <RoundShape className='jupiter' />
+            <RoundShape className='terra' />
+            <RoundShape className='lua' />
         </main>
     )
 }
