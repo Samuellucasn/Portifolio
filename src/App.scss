@@ -1,0 +1,28 @@
+.App {
+  height: 100vh;
+}
+
+header{
+  background-color: aqua;
+
+  height: 50px;
+
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul { 
+  width: 200px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  
+  list-style: none;
+  text-decoration: none;
+}
