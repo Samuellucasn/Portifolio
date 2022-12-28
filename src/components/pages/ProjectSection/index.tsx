@@ -1,6 +1,6 @@
 import './style.scss'
 
-const Projects: any = () => {
+const Projects: React.FC<any> = () => {
     return (
         <div>piroca</div>
     )

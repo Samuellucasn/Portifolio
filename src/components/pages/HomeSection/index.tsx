@@ -1,8 +1,13 @@
 import './style.scss'
 
-const Home = () => {
+const Home: React.FC<any> = () => {
     return (
-        <div>oi</div>
+        <main>
+            <div className='saturn' />
+            <div className='jupiter' />
+            <div className='terra' />
+            <div className='lua' />
+        </main>
     )
 }
 

@@ -1,6 +1,6 @@
 import './style.scss'
 
-const Me = () => {
+const Me: React.FC<any> = () => {
     return (
         <div>tchau</div>
     )
