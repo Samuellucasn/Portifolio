@@ -1,8 +1,43 @@
-@use '/src/style/variables.scss';
+@use '/src/style/variables.scss' as variables;
 
 main {
     background-image: url(/src/assets/estrelasFundo.png);
-    background-size: cover;
+    background-size: 90vh;
 
     height: calc(100vh - variables.$header-height);
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.saturn-wrapper {
+    width: 50vw;
+
+    .saturn {
+        width: variables.$saturn-width;
+        height: variables.$saturn-height;
+    }
+}
+
+.jupiter-wrapper {
+    width: 50vw;
+
+    .jupiter {
+        width: variables.$jupiter-width;
+        height: variables.$jupiter-height;
+    }    
+}
+
+.earth-wrapper {
+    width: 100vw;
+
+    .earth {
+    width: variables.$earth-width;
+    height: variables.$earth-height;
+    }
+
+    .moon {
+        width: variables.$moon-width;
+        height: variables.$moon-height;
+    }
 }
