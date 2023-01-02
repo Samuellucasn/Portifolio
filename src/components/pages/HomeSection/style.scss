@@ -1,4 +1,8 @@
-div {
-    background-image: url(assets/estrelasFundo.png);
+@use '/src/style/variables.scss';
+
+main {
+    background-image: url(/src/assets/estrelasFundo.png);
     background-size: cover;
+
+    height: calc(100vh - variables.$header-height);
 }

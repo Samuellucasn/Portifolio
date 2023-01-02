@@ -1,5 +1,13 @@
+@mixin bgImage ($bg-image: url('')) {
+    background-image: $bg-image;
+    background-size: cover;
+}
+
+
 .round-shape {
     border-radius: 50%;
+    height: 10px;
+    width: 10px;
 
     background-color: red;
 }

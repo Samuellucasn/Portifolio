@@ -1,11 +1,9 @@
-.App {
-  height: 100vh;
-}
+@use '/src/style/variables.scss' as variables;
 
 header{
   background-color: aqua;
 
-  height: 50px;
+  height: variables.$header-height;
 
   
   display: flex;
