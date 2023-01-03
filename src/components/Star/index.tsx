@@ -1,6 +1,6 @@
 import './style.scss'
 
-const Star : React.FC<any> = () => {
+const Star : React.FC<any> = ({}) => {
     return (
         <div className='star'/> 
     )

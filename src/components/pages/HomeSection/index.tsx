@@ -1,8 +1,19 @@
+import { ReactElement, useState } from 'react'
 import './style.scss'
 
+import Star from '../../Star'
+
+interface clickArray {
+    x: number,
+    y: number
+}
+
 const Home: React.FC<any> = () => {
+    const [clickArray, setClickArray] = useState<clickArray[]>([])
+
     return (
-        <main className='home-main'>
+        <>
+            <main className='home-main' onClick={(e: any) => {setClickArray([e.clientX, e.clientY])}}>
             <div className="saturn-wrapper">
                 <div className='saturn' />
             </div>
@@ -13,7 +24,14 @@ const Home: React.FC<any> = () => {
                 <div className='earth' />
                 <div className='moon' />
             </div>
-        </main>
+
+            </main>
+            {
+                clickArray.map( (axis: any) => {
+                    <Star />
+                })
+            }
+        </>
     )
 }
 
