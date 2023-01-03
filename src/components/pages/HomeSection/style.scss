@@ -1,5 +1,19 @@
 @use '/src/style/variables.scss' as variables;
 
+@mixin wrapper-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bgImage ($bg-image: '') {
+    background-image: $bg-image;
+    background-size: cover;
+
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 main {
     background-image: url(/src/assets/estrelasFundo.png);
     background-size: 90vh;
@@ -13,31 +27,52 @@ main {
 .saturn-wrapper {
     width: 50vw;
 
+    @include wrapper-display;
+
     .saturn {
-        width: variables.$saturn-width;
-        height: variables.$saturn-height;
+        width: variables.$saturn-height-width;
+        height: variables.$saturn-height-width;
+
+        @include bgImage(url('/src/assets/saturno.png'));
+
+        border-radius: 0;
+        margin-bottom: 100px;
     }
 }
 
 .jupiter-wrapper {
     width: 50vw;
 
+    @include wrapper-display;
+
     .jupiter {
-        width: variables.$jupiter-width;
-        height: variables.$jupiter-height;
+        width: variables.$jupiter-height-width;
+        height: variables.$jupiter-height-width;
+        
+        @include bgImage(url('/src/assets/Jupiter.png'));
+
+        margin-top: 100px;
     }    
 }
 
 .earth-wrapper {
     width: 100vw;
 
+    @include wrapper-display;
+
     .earth {
-    width: variables.$earth-width;
-    height: variables.$earth-height;
+        width: variables.$earth-height-width;
+        height: variables.$earth-height-width;
+    
+        @include bgImage(url('/src/assets/terra2.png'))
     }
 
     .moon {
-        width: variables.$moon-width;
-        height: variables.$moon-height;
+        width: variables.$moon-height-width;
+        height: variables.$moon-height-width;
+
+        background-color: #fff;
+
+        margin: 20px;
     }
 }
