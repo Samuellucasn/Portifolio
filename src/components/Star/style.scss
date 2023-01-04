@@ -3,8 +3,8 @@
     height: 2px;
 
     border-radius: 50%;
-    box-shadow: 1px 0px 12px 2px white;
-    animation: bright 2s alternate infinite linear 1s, move 100s linear infinite;
+    box-shadow: 1px 0px 12px 3px white;
+    animation: bright 4s alternate infinite linear 1s, move 100s linear infinite;
 
     background-color: white;
 
@@ -17,7 +17,7 @@
         opacity: 1;
     }
     50% {
-        opacity: .5;
+        opacity: .4;
     }
     100% {
         opacity: 1;
