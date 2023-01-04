@@ -12,16 +12,29 @@
 
     cursor: pointer;
     border-radius: 50%;
+
+    z-index: 20;
 }
 
 main {
-    background-image: url(/src/assets/estrelasFundo.png);
-    background-size: 90vh;
-
+    
     height: calc(100vh - variables.$header-height);
-
+    
     display: flex;
     flex-flow: row wrap;
+
+    .background {
+        background-image: url(/src/assets/estrelasFundo.png);
+        background-size: 90vh;
+    
+        height: 2000px;
+        width: 100vw;
+        z-index: -1000;
+        position: absolute;
+    
+        animation: parallax 100s linear infinite 0s;
+    }
+    
 }
 
 .saturn-wrapper {
@@ -75,5 +88,14 @@ main {
 
         margin: 20px;
         border-radius: 50%;
+    }
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateY(0);
+    }
+    99% {
+        transform: translateY(-1200px);
     }
 }
