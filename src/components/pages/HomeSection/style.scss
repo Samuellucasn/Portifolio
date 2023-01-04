@@ -27,7 +27,7 @@ main {
         background-image: url(/src/assets/estrelasFundo.png);
         background-size: 90vh;
     
-        height: 2000px;
+        height: 3000px;
         width: 100vw;
         z-index: -1000;
         position: absolute;
@@ -83,15 +83,25 @@ main {
         @include bgImage(url('/src/assets/terra2.png'))
     }
 
-    .moon {
-        width: variables.$moon-height-width;
-        height: variables.$moon-height-width;
+    .moon-wrapper {
+        width: calc(variables.$earth-height-width + 100px);
+        
+        position: absolute;
 
-        background-color: #fff;
+        animation: moon-turn 5s linear infinite;
 
-        margin: 20px;
-        border-radius: 50%;
+        .moon {
+            width: variables.$moon-height-width;
+            height: variables.$moon-height-width;
+    
+            background-color: #fff;
+    
+            margin: 20px;
+            border-radius: 50%;
+    
+            
 
+        }
     }
 }
 
@@ -109,6 +119,16 @@ main {
         transform: rotateZ(-360deg);
     }
     to {
-        transform: rotateZ(0deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes moon-turn {
+    0% {
+        transform-origin: left left;
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

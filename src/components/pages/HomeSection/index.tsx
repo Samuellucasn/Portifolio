@@ -23,15 +23,18 @@ const Home: React.FC<any> = () => {
                 </div>
                 <div className="earth-wrapper">
                     <div className='earth' />
-                    <div className='moon' />
+
+                    <div className="moon-wrapper">
+                        <div className='moon' />
+                    </div>
                 </div>
                 
                 <div className='background'></div>
 
             </main>
             {
-                clickArray.map( (axis: any) => {
-                    return <Star  x={axis.x} y={axis.y} />
+                clickArray.map( (axis: any, id: number) => {
+                    return <Star key={id} x={axis.x} y={axis.y} />
                 })
             }
         </>
