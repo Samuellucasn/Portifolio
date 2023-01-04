@@ -42,13 +42,30 @@ main {
     @include wrapper-display;
 
     .saturn {
-        width: variables.$saturn-height-width;
+        width: 220px;
         height: variables.$saturn-height-width;
 
-        @include bgImage(url('/src/assets/saturno.png'));
+        @include bgImage(url('/src/assets/saturn.png'));
 
         border-radius: 0;
         margin-bottom: 100px;
+
+        position: relative;
+    }
+
+    .teste {
+        width: calc(variables.$saturn-height-width + 100px);
+        height: calc(variables.$saturn-height-width + 100px);
+
+        animation: ring-move 2s infinite;
+        transform: rotateX(-75deg), rotateY(-20deg);
+        transform-style: preserve-3d;
+
+        border: 1px solid #fff;
+        background-image: url(/src/assets/estrelasFundo.png);
+        border-radius: 50%;
+        
+        position: absolute;
     }
 }
 
@@ -131,5 +148,14 @@ main {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes ring-move {
+    from {
+        transform: rotate(-75deg, -20deg, 0deg);
+    }
+    to {
+        transform: rotate(75deg, 20deg, 360deg);
     }
 }

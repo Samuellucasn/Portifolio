@@ -16,7 +16,9 @@ const Home: React.FC<any> = () => {
             <main className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY}])}>
 
                 <div className="saturn-wrapper">
-                    <div className='saturn' />
+                    <div className='saturn' >
+                        <div className='teste'/>
+                    </div>
                 </div>
                 <div className="jupiter-wrapper">
                     <div className='jupiter' />
