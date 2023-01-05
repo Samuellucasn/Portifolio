@@ -84,7 +84,7 @@
         width: calc(variables.$saturn-height-width + 50px);
         height: calc(variables.$saturn-height-width + 50px);
 
-        animation: ring-move 2s infinite;
+        animation: bright 10s infinite;
         transform: rotateX(258deg) rotateY(33deg);
         transform-style: preserve-3d;
 
@@ -175,15 +175,6 @@
     }
     100% {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes ring-move {
-    from {
-        transform: rotate(-75deg, -20deg, 0deg);
-    }
-    to {
-        transform: rotate(75deg, 20deg, 360deg);
     }
 }
 
