@@ -1,11 +1,20 @@
 @use '/src/style/variables.scss' as variables;
 
+@mixin about-text {
+    width: 300px;
+
+    text-align: center;
+}
+
 .about-main {
     height: 100vh;
     margin-top: variables.$header-height;
 
     color: #fff;
     
+    display: flex;
+    flex-flow: row wrap;
+
     img {
         position: absolute;
 
@@ -20,13 +29,53 @@
 }
 
 .about-me {
+    height: 100vh;
+
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    .perfil-img {
+        background-image: url();
+
+        width: variables.$perfil-height-width;
+        height: variables.$perfil-height-width;
+
+        border-radius: 50%;
+    }
+
+    h1 {
+        @include about-text();
+    }
+
+    p {
+        @include about-text();
+    }
+}
+
+.wrapper {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
-}
+    .contacts {
+        height: 200px;
 
-.contacts {
+        ul {
+            display: flex;
+            flex-direction: column;
 
-}
-
-.stacks {
-
+            list-style: none;
+    
+        }
+    }
+    
+    .stacks {
+    
+    }
 }
