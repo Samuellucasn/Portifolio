@@ -4,6 +4,8 @@
     width: 300px;
 
     text-align: center;
+
+    margin-bottom: 20px;
 }
 
 .about-main {
@@ -14,6 +16,7 @@
     
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 
     img {
         position: absolute;
@@ -29,22 +32,25 @@
 }
 
 .about-me {
-    height: 100vh;
-
-    width: 50%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+
+    margin-left: 150px;
+    margin: auto 150px;
 
     .perfil-img {
-        background-image: url();
-
+        background-image: url(/src//assets/foto-perfil-portifolio.jpg);
+        background-size: cover;
+        opacity: .7;
+        
         width: variables.$perfil-height-width;
         height: variables.$perfil-height-width;
 
         border-radius: 50%;
+
+        margin-bottom: 20px
     }
 
     h1 {
@@ -53,11 +59,12 @@
 
     p {
         @include about-text();
+
+        width: 400px;
     }
 }
 
 .wrapper {
-    width: 50%;
 
     display: flex;
     flex-direction: column;
@@ -76,6 +83,9 @@
     }
     
     .stacks {
-    
+        
+        .stack-button {
+
+        } 
     }
 }
