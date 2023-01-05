@@ -17,7 +17,7 @@ const Home: React.FC<any> = () => {
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
-                        <div className='teste'/>
+                        <div className='ring'/>
                     </div>
                 </div>
                 <div className="jupiter-wrapper">

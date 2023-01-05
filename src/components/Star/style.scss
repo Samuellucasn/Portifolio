@@ -4,7 +4,7 @@
 
     border-radius: 50%;
     box-shadow: 1px 0px 12px 3px white;
-    animation: bright 4s alternate infinite linear 1s, move 100s linear infinite;
+    animation: bright 4s alternate infinite linear 1s, parallax 100s linear infinite;
 
     background-color: white;
 
@@ -21,14 +21,5 @@
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-1200px);
     }
 }

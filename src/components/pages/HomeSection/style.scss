@@ -41,7 +41,6 @@ main {
 
         z-index: 30;
 
-        background-color: 0;
         color: #d4d4d4;
 
         animation: welcome-opacity 10s ease-in;
@@ -76,7 +75,7 @@ main {
         position: relative;
     }
 
-    .teste {
+    .ring {
         width: calc(variables.$saturn-height-width + 50px);
         height: calc(variables.$saturn-height-width + 50px);
 
@@ -107,9 +106,6 @@ main {
         @include bgImage(url('/src/assets/Jupiter.png'));
 
         margin-top: 100px;
-
-        
-        // animation: jupiter-rotate 200s linear infinite;
     }    
 }
 
@@ -124,7 +120,7 @@ main {
     
         @include bgImage(url('/src/assets/terra2.png'));
 
-        animation: jupiter-rotate 200s linear infinite;
+        animation: rotate 200s linear infinite;
 
         cursor: pointer;
     }
@@ -158,7 +154,7 @@ main {
     }
 }
 
-@keyframes jupiter-rotate {
+@keyframes rotate {
     from {
         transform: rotateZ(-360deg);
     }
