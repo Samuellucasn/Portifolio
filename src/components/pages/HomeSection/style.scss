@@ -34,6 +34,29 @@ main {
         animation: parallax 100s linear infinite 0s;
     }
     
+    .welcome-text {
+        position: absolute;
+        left: 200px;
+        bottom: 200px;
+
+        z-index: 30;
+
+        background-color: 0;
+        color: #d4d4d4;
+
+        animation: welcome-opacity 10s ease-in;
+        
+        p {
+            font-size: 1em;  
+            margin-left: 20px; 
+
+            border-bottom: 1px solid #d4d4d4;
+        }
+
+        h1 {
+            font-size: 7.5em;
+        }
+    }
 }
 
 .saturn-wrapper {
@@ -54,18 +77,21 @@ main {
     }
 
     .teste {
-        width: calc(variables.$saturn-height-width + 100px);
-        height: calc(variables.$saturn-height-width + 100px);
+        width: calc(variables.$saturn-height-width + 50px);
+        height: calc(variables.$saturn-height-width + 50px);
 
         animation: ring-move 2s infinite;
-        transform: rotateX(-75deg), rotateY(-20deg);
+        transform: rotateX(258deg) rotateY(33deg);
         transform-style: preserve-3d;
 
         border: 1px solid #fff;
         background-image: url(/src/assets/estrelasFundo.png);
         border-radius: 50%;
+        box-shadow: -1px 1px 20px 1px white;
         
         position: absolute;
+        top: -25px;
+        left: 20px;
     }
 }
 
@@ -83,7 +109,7 @@ main {
         margin-top: 100px;
 
         
-        animation: jupiter-rotate 200s linear infinite;
+        // animation: jupiter-rotate 200s linear infinite;
     }    
 }
 
@@ -157,5 +183,14 @@ main {
     }
     to {
         transform: rotate(75deg, 20deg, 360deg);
+    }
+}
+
+@keyframes welcome-opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

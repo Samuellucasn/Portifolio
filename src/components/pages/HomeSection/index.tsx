@@ -31,8 +31,12 @@ const Home: React.FC<any> = () => {
                     </div>
                 </div>
                 
-                <div className='background'></div>
+                <div className='background'/>
 
+                <div className="welcome-text">
+                    <p>Bem vindo ao meu</p>
+                    <h1>Portifolio</h1>
+                </div>
             </main>
             {
                 clickArray.map( (axis: any, id: number) => {
