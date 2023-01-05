@@ -13,16 +13,20 @@
     border-radius: 50%;
 
     z-index: 20;
+
+    position: sticky;
 }
 
-main {
+.home-main {
     
-    height: calc(100vh - variables.$header-height);
+    height: 100vh;
+    margin-top: variables.$header-height;
     
     display: flex;
     flex-flow: row wrap;
 
     .background {
+        background-color: #070707;
         background-image: url(/src/assets/estrelasFundo.png);
         background-size: 90vh;
     
@@ -30,6 +34,7 @@ main {
         width: 100vw;
         z-index: -1000;
         position: absolute;
+        top: 0;
     
         animation: parallax 100s linear infinite 0s;
     }
@@ -43,7 +48,7 @@ main {
 
         color: #d4d4d4;
 
-        animation: welcome-opacity 10s ease-in;
+        animation: welcome-opacity 5s ease-in;
         
         p {
             font-size: 1em;  
@@ -149,7 +154,7 @@ main {
     0% {
         transform: translateY(0);
     }
-    99% {
+    100% {
         transform: translateY(-1200px);
     }
 }
@@ -183,10 +188,13 @@ main {
 }
 
 @keyframes welcome-opacity {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    50% {
+        opacity: 0.2;
+    }
+    100% {
         opacity: 1;
     }
 }

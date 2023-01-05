@@ -1,0 +1,9 @@
+@use '/src/style/variables.scss' as variables;
+
+.about-main {
+    background-color: #d3d3d3;
+    background-image: url(/src/assets/red-moon.png);
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}

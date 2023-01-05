@@ -2,7 +2,9 @@ import './style.scss'
 
 const Me: React.FC<any> = () => {
     return (
-        <div>tchau</div>
+        <main className='about-main'>
+            
+        </main>
     )
 }
 
