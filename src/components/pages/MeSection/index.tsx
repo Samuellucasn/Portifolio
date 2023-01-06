@@ -20,7 +20,9 @@ const Me: React.FC<any> = () => {
                 </div>
             </div>
 
-            <div className="wrapper">
+            <div className="stacks-wrapper">
+
+                <h1>STACKS</h1>
 
                 <div className="stacks">
                     <Stamp className={''} ></Stamp>
@@ -30,6 +32,11 @@ const Me: React.FC<any> = () => {
                     <Stamp className={''} ></Stamp>
                     <Stamp className={''} ></Stamp>
                 </div>
+
+                <h2>Javascript</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore magnam fuga aliquid porro magni amet? Sed accusamus culpa, consequuntur molestias natus, impedit, quam ut animi aspernatur alias a adipisci iusto?
+                Labore laudantium facere unde facilis! Saepe assumenda doloremque vel temporibus quibusdam, nemo perspiciatis iusto quis pariatur ea ex facilis, accusantium molestias eaque itaque, laudantium maiores quod iste? Est, non numquam!</p>
             </div>
 
         </main>

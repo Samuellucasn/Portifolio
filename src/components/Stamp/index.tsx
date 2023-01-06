@@ -1,8 +1,8 @@
 import './style.scss'
 
-const Stamp : any = () => {
+const Stamp : any = ({children} : any) => {
     return (
-        <div></div>
+        <div className='stamp'>{children}</div>
     )
 }
 

@@ -1,0 +1,10 @@
+@use '/src/style/variables.scss' as variables;
+
+.stamp {
+    width: variables.$stamp-height-width;
+    height: variables.$stamp-height-width;
+
+    border-radius: 50%;
+
+    background-color: white;
+}
