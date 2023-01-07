@@ -13,18 +13,24 @@ const Me: React.FC<any> = () => {
 
                 <div className="contacts">
                     <ul>
-                        <li>GitHub</li>
-                        <li>Linkedin</li>
-                        <li>E-mail</li>
+                        <li><Stamp style={{width: 35 + 'px', height: 35 + 'px'}}></Stamp>GitHub</li>
+                        <li><Stamp style={{width: 35 + 'px', height: 35 + 'px'}}></Stamp>Linkedin</li>
+                        <li><Stamp style={{width: 35 + 'px', height: 35 + 'px'}}></Stamp>E-mail</li>
                     </ul>
                 </div>
             </div>
 
             <div className="stacks-wrapper">
+                <div className="profissao">
+                    <h1>Desenvolvedor web Front end</h1>
+                </div>
 
-                <h1>STACKS</h1>
+                <h1>Stacks</h1>
 
                 <div className="stacks">
+                    <Stamp className={''} ></Stamp>
+                    <Stamp className={''} ></Stamp>
+                    <Stamp className={''} ></Stamp>
                     <Stamp className={''} ></Stamp>
                     <Stamp className={''} ></Stamp>
                     <Stamp className={''} ></Stamp>
