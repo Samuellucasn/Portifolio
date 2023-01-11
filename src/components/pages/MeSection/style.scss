@@ -40,10 +40,13 @@
     margin: auto;
     margin-bottom: 250px;
 
+    animation:  1s linear ;
+
+
     .perfil-img {
-        background-image: url(/src//assets/foto-perfil-portifolio.jpg);
+        background-image: url(/src//assets/fot-perfil-portifolio-bom.jpg);
         background-size: cover;
-        opacity: .7;
+        opacity: .8;
         
         width: variables.$perfil-height-width;
         height: variables.$perfil-height-width;
@@ -93,8 +96,9 @@
     gap: 20px;
 
     margin: auto;
-    margin-top: 300px;
+    margin-top: 250px;
     
+    animation: section-move 1s linear ;
     .stacks {
         display: flex;
         flex-wrap: wrap;
@@ -120,3 +124,12 @@
 
     font-size: 20px;
 }
+
+// @keyframes section-move {
+//     from {
+//         transform: translateY(-1000);
+//     }
+//     to {
+//         transform: translateY(0);
+//     }
+// }

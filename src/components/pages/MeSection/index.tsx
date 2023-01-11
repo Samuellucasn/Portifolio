@@ -1,5 +1,7 @@
 import './style.scss'
 
+import BsLinkedin from 'react-icons/bs'
+
 import Stamp from '../../Stamp'
 
 const Me: React.FC<any> = () => {
