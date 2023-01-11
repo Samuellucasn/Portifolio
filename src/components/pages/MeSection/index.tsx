@@ -1,6 +1,6 @@
 import './style.scss'
 
-import BsLinkedin from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
 
 import Stamp from '../../Stamp'
 
@@ -15,9 +15,9 @@ const Me: React.FC<any> = () => {
 
                 <div className="contacts">
                     <ul>
-                        <li><Stamp style={{width: 35 + 'px', height: 35 + 'px'}}></Stamp>GitHub</li>
-                        <li><Stamp style={{width: 35 + 'px', height: 35 + 'px'}}></Stamp>Linkedin</li>
-                        <li><Stamp style={{width: 35 + 'px', height: 35 + 'px'}}></Stamp>E-mail</li>
+                        <li><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp>GitHub</li>
+                        <li><Stamp ></Stamp>Linkedin</li>
+                        <li><Stamp ></Stamp>E-mail</li>
                     </ul>
                 </div>
             </div>
