@@ -3,10 +3,11 @@ import './style.scss'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 import {AiOutlineHtml5} from 'react-icons/ai'
-import {FaHtml5, FaReact} from 'react-icons/fa'
-import {DiCss3} from 'react-icons/di'
+import {FaHtml5, FaReact, FaGitAlt} from 'react-icons/fa'
+import {DiJavascript1} from 'react-icons/di'
 import {IoLogoJavascript, IoLogoNodejs} from 'react-icons/io'
 import {SiTypescript, SiMysql, SiPostman, SiMongodb} from 'react-icons/si'
+import {TbBrandCss3} from 'react-icons/tb'
 
 import Stamp from '../../Stamp'
 
@@ -37,15 +38,16 @@ const Me: React.FC<any> = () => {
 
                 <div className="stacks">
                     <ul>
-                        <li><Stamp style={{backgroundColor: '#fea256'}} ><FaHtml5 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#324382'}} ><DiCss3 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#f4dd59'}} ><IoLogoJavascript /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#fea256'}} ><AiOutlineHtml5 /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#324382'}} ><TbBrandCss3 /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#f4dd59'}} ><DiJavascript1 /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#333ed9'}} ><SiTypescript /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#65d15d'}} ><IoLogoNodejs /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#5daed1'}} ><FaReact /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#e7cd85'}} ><SiMysql /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#44965c'}} ><SiMongodb /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#af7141'}} ><SiPostman /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#af4141'}} ><FaGitAlt /></Stamp></li>
                     </ul>
                 </div>
 
