@@ -3,7 +3,7 @@ import './style.scss'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 import {AiOutlineHtml5} from 'react-icons/ai'
-import {FaHtml5, FaReact, FaGitAlt} from 'react-icons/fa'
+import {FaHtml5, FaReact, FaGitAlt, FaCss3Alt} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
 import {IoLogoJavascript, IoLogoNodejs} from 'react-icons/io'
 import {SiTypescript, SiMysql, SiPostman, SiMongodb} from 'react-icons/si'
@@ -39,7 +39,7 @@ const Me: React.FC<any> = () => {
                 <div className="stacks">
                     <ul>
                         <li><Stamp style={{backgroundColor: '#fea256'}} ><AiOutlineHtml5 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#324382'}} ><TbBrandCss3 /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#324382'}} ><FaCss3Alt /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#f4dd59'}} ><DiJavascript1 /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#333ed9'}} ><SiTypescript /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#65d15d'}} ><IoLogoNodejs /></Stamp></li>
