@@ -11,8 +11,12 @@ import {SiTypescript, SiMongodb} from 'react-icons/si'
 import {GrMysql} from 'react-icons/gr'
 
 import Stamp from '../../Stamp'
+import React from 'react'
 
 const Me: React.FC<any> = () => {
+
+    const {skillProps, skillName} = useSkillProp()
+
     return (
         <main className='about-main'>
 
@@ -39,16 +43,11 @@ const Me: React.FC<any> = () => {
 
                 <div className="stack">
                     <ul>
-                        <li><Stamp style={{backgroundColor: '#d77242'}} ><AiOutlineHtml5 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#2284c6'}} ><FaCss3Alt /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#eed752'}} ><DiJavascript1 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#2162a8'}} ><SiTypescript /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#79b840'}} ><FaNodeJs /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#3cb3e6'}} ><FaReact /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#eaeaea'}} ><GrMysql /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#44965c'}} ><SiMongodb /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#3590c1'}} ><FaDocker /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#af4141'}} ><FaGitAlt /></Stamp></li>
+                        {
+                            skillProps.map((v: any) => {
+                                return <li><Stamp style={{backgroundColor: v.color}}>{React.createElement(v.icon)}</Stamp></li>
+                            })
+                        }
                     </ul>
                 </div>
 
