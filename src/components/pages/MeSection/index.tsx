@@ -7,7 +7,8 @@ import {MdEmail} from 'react-icons/md'
 import {AiOutlineHtml5} from 'react-icons/ai'
 import {FaDocker, FaReact, FaGitAlt, FaCss3Alt, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
-import {SiTypescript, SiMysql, SiMongodb} from 'react-icons/si'
+import {SiTypescript, SiMongodb} from 'react-icons/si'
+import {GrMysql} from 'react-icons/gr'
 
 import Stamp from '../../Stamp'
 
@@ -38,15 +39,15 @@ const Me: React.FC<any> = () => {
 
                 <div className="stack">
                     <ul>
-                        <li><Stamp style={{backgroundColor: '#fea256'}} ><AiOutlineHtml5 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#324382'}} ><FaCss3Alt /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#f4dd59'}} ><DiJavascript1 /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#333ed9'}} ><SiTypescript /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#65d15d'}} ><FaNodeJs /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#5daed1'}} ><FaReact /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#e7cd85'}} ><SiMysql /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#d77242'}} ><AiOutlineHtml5 /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#2284c6'}} ><FaCss3Alt /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#eed752'}} ><DiJavascript1 /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#2162a8'}} ><SiTypescript /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#79b840'}} ><FaNodeJs /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#3cb3e6'}} ><FaReact /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#eaeaea'}} ><GrMysql /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#44965c'}} ><SiMongodb /></Stamp></li>
-                        <li><Stamp style={{backgroundColor: '#af7141'}} ><FaDocker /></Stamp></li>
+                        <li><Stamp style={{backgroundColor: '#3590c1'}} ><FaDocker /></Stamp></li>
                         <li><Stamp style={{backgroundColor: '#af4141'}} ><FaGitAlt /></Stamp></li>
                     </ul>
                 </div>
