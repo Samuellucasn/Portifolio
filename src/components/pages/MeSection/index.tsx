@@ -4,11 +4,6 @@ import {useSkillProp} from '../../../hooks/useSkillProp'
 
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
-import {AiOutlineHtml5} from 'react-icons/ai'
-import {FaDocker, FaReact, FaGitAlt, FaCss3Alt, FaNodeJs} from 'react-icons/fa'
-import {DiJavascript1} from 'react-icons/di'
-import {SiTypescript, SiMongodb} from 'react-icons/si'
-import {GrMysql} from 'react-icons/gr'
 
 import Stamp from '../../Stamp'
 import React from 'react'
@@ -44,8 +39,8 @@ const Me: React.FC<any> = () => {
                 <div className="stack">
                     <ul>
                         {
-                            skillProps.map((v: any) => {
-                                return <li><Stamp style={{backgroundColor: v.color}}>{React.createElement(v.icon)}</Stamp></li>
+                            skillProps.map((v: any, i: number) => {
+                                return <li key={i}><Stamp style={{backgroundColor: v.color}}>< v.icon /></Stamp></li>
                             })
                         }
                     </ul>
