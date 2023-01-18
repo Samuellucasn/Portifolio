@@ -10,7 +10,7 @@ import React from 'react'
 
 const Me: React.FC<any> = () => {
 
-    const {skillProps, skillName} = useSkillProp()
+    const {skillProps, teste} = useSkillProp()
 
     return (
         <main className='about-main'>
@@ -29,7 +29,7 @@ const Me: React.FC<any> = () => {
                 </div>
             </section>
 
-            <section className="stacks-wrapper">
+            <section className="stack-wrapper">
                 <div className="profissao">
                     <h1>Desenvolvedor web Front end</h1>
                 </div>
@@ -40,16 +40,15 @@ const Me: React.FC<any> = () => {
                     <ul>
                         {
                             skillProps.map((v: any, i: number) => {
-                                return <li key={i}><Stamp style={{backgroundColor: v.color}}>< v.icon /></Stamp></li>
+                                return <li key={i} onClick={() => useSkillProp(i)} ><Stamp style={{backgroundColor: v.color}}>< v.icon /></Stamp></li>
                             })
                         }
                     </ul>
                 </div>
 
-                <h2>Javascript</h2>
+                <h2>{teste}</h2>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore magnam fuga aliquid porro magni amet? Sed accusamus culpa, consequuntur molestias natus, impedit, quam ut animi aspernatur alias a adipisci iusto?
-                Labore laudantium facere unde facilis! Saepe assumenda doloremque vel temporibus quibusdam, nemo perspiciatis iusto quis pariatur ea ex facilis, accusantium molestias eaque itaque, laudantium maiores quod iste? Est, non numquam!</p>
+                <p>{teste}</p>
             </section>
 
         </main>

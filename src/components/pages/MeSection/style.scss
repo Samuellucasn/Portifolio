@@ -82,7 +82,7 @@
 
 }
 
-.stacks-wrapper {
+.stack-wrapper {
 
     display: flex;
     flex-direction: column;
@@ -90,10 +90,10 @@
     align-items: center;
     gap: 20px;
 
+    text-align: center;
+
     margin: auto;
     margin-top: 250px;
-    
-    animation: section-move 1s linear ;
 
     .stack {
         width: 400px;
@@ -137,12 +137,3 @@
 
     font-size: 20px;
 }
-
-// @keyframes section-move {
-//     from {
-//         transform: translateY(-1000);
-//     }
-//     to {
-//         transform: translateY(0);
-//     }
-// }
