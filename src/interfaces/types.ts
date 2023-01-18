@@ -1,3 +1,3 @@
-export interface useSkillProp {
-    
+export interface useSkillPropType {
+    id: number
 }

@@ -34,8 +34,8 @@ const Home: React.FC<any> = () => {
                 <div className='background'/>
 
                 <div className="welcome-text">
-                    <p>Bem vindo ao meu</p>
-                    <h1>Portifolio</h1>
+                    {/* <p>Bem vindo ao meu</p>
+                    <h1>Portifolio</h1> */}
                 </div>
             </main>
             {

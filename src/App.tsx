@@ -7,6 +7,7 @@ import Projects from './components/pages/ProjectSection'
 
 function App() {
   return (
+    <>
     <Router>
       <header>
         <nav>
@@ -17,13 +18,12 @@ function App() {
           </ul>
         </nav>
       </header>
-
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/Me' element={<Me/>}/>
-        <Route path='/Projects' element={<Projects/>}/>
-      </Routes>
     </Router>
+
+    <Home />
+    <Me />
+    <Projects />
+    </>    
   )
 }
 

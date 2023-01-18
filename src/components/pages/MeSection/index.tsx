@@ -31,10 +31,6 @@ const Me: React.FC<any> = () => {
             </section>
 
             <section className="stack-wrapper">
-                <div className="profissao">
-                    <h1>Desenvolvedor web Front end</h1>
-                </div>
-
                 <h1>Stack</h1>
 
                 <div className="stack">

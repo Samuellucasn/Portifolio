@@ -19,8 +19,7 @@
 
 .home-main {
     
-    height: 100vh;
-    margin-top: variables.$header-height;
+    height: 95vh;
     
     display: flex;
     flex-flow: row wrap;
@@ -31,9 +30,10 @@
         background-size: 90vh;
     
         height: 2000px;
-        width: 100vw;
+        width: 100%;
         z-index: -1000;
         position: absolute;
+        top: 0;
     
         animation: parallax 100s linear infinite 0s;
     }
@@ -63,7 +63,7 @@
 }
 
 .saturn-wrapper {
-    width: 50vw;
+    width: 50%;
 
     @include wrapper-display;
 
@@ -99,7 +99,7 @@
 }
 
 .jupiter-wrapper {
-    width: 50vw;
+    width: 50%;
 
     @include wrapper-display;
 

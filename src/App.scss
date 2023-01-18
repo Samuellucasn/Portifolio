@@ -3,14 +3,14 @@
 header{
   background-color: transparent;
 
-  height: variables.$header-height;
-  width: 100vw;
+  height: 50px;
+  width: 100%;
   
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  position: absolute;
+  position: sticky;
   top: 0px;
 
   ul { 
