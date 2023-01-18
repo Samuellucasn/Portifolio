@@ -1,4 +1,3 @@
-import { Route, Link, Routes, BrowserRouter as Router } from 'react-router-dom'
 import './App.scss'
 
 import Home from './components/pages/HomeSection'
@@ -8,21 +7,21 @@ import Projects from './components/pages/ProjectSection'
 function App() {
   return (
     <>
-    <Router>
-      <header>
+    <header>
         <nav>
           <ul>
-            <li><Link to={'/'}>Home</Link></li>
-            <li><Link to={'/Me'}>Me</Link></li>
-            <li><Link to={'/Projects'}>Projects</Link></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Me</a></li>
+            <li><a href="">Projects</a></li>
           </ul>
         </nav>
-      </header>
-    </Router>
+    </header>
 
-    <Home />
-    <Me />
-    <Projects />
+    <main>
+      <Home />
+      <Me />
+      <Projects />
+    </main>
     </>    
   )
 }

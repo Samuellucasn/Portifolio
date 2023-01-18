@@ -14,7 +14,7 @@ const Me: React.FC<any> = () => {
     const {skillProps, teste} = useSkillProp(skillId)
 
     return (
-        <main className='about-main'>
+        <section className='about-main'>
 
             <section className="about-me">
                 <div className="perfil-img" />
@@ -23,9 +23,9 @@ const Me: React.FC<any> = () => {
 
                 <div className="contacts">
                     <ul>
-                        <li><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp>GitHub</li>
-                        <li><Stamp style={{backgroundColor: '#ffff'}}><BsGithub /></Stamp>Linkedin</li>
-                        <li><Stamp style={{backgroundColor: '#d15d5d'}}><MdEmail /></Stamp>E-mail</li>
+                        <li><a href=""><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp></a> GitHub</li>
+                        <li><a href=""><Stamp style={{backgroundColor: '#ffff'}}><BsGithub /></Stamp></a> Linkedin</li>
+                        <li><a href=""><Stamp style={{backgroundColor: '#d15d5d'}}><MdEmail /></Stamp></a> E-mail</li>
                     </ul>
                 </div>
             </section>
@@ -48,7 +48,7 @@ const Me: React.FC<any> = () => {
                 <p>{teste.desc}</p>
             </section>
 
-        </main>
+        </section>
     )
 }
 

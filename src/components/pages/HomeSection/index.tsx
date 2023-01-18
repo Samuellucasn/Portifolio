@@ -13,7 +13,7 @@ const Home: React.FC<any> = () => {
 
     return (
         <>
-            <main className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY}])}>
+            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
@@ -37,7 +37,7 @@ const Home: React.FC<any> = () => {
                     {/* <p>Bem vindo ao meu</p>
                     <h1>Portifolio</h1> */}
                 </div>
-            </main>
+            </section>
             {
                 clickArray.map( (axis: any, id: number) => {
                     return <Star key={id} x={axis.x} y={axis.y} />
