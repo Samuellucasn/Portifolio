@@ -1,6 +1,6 @@
-import { useEffect } from "react"
+import {} from '../interfaces/types'
 
-import {FaDocker, FaReact, FaGitAlt, FaCss3Alt, FaNodeJs, FaHtml5, FaSass} from 'react-icons/fa'
+import {FaReact, FaGitAlt, FaCss3Alt, FaNodeJs, FaHtml5, FaSass} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
 import {SiTypescript, SiMongodb} from 'react-icons/si'
 import {GrMysql} from 'react-icons/gr'

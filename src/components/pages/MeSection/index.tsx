@@ -6,11 +6,12 @@ import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 
 import Stamp from '../../Stamp'
-import React from 'react'
+import React, { useState } from 'react'
 
 const Me: React.FC<any> = () => {
+    const [skillId, setSkillId] = useState(0)
 
-    const {skillProps, teste} = useSkillProp()
+    const {skillProps, teste} = useSkillProp(skillId)
 
     return (
         <main className='about-main'>
@@ -40,15 +41,15 @@ const Me: React.FC<any> = () => {
                     <ul>
                         {
                             skillProps.map((v: any, i: number) => {
-                                return <li key={i} onClick={() => useSkillProp(i)} ><Stamp style={{backgroundColor: v.color}}>< v.icon /></Stamp></li>
+                                return <li key={i} onClick={() => setSkillId(i)} ><Stamp style={{backgroundColor: v.color}}>< v.icon /></Stamp></li>
                             })
                         }
                     </ul>
                 </div>
 
-                <h2>{teste}</h2>
+                <h2>{teste.name}</h2>
 
-                <p>{teste}</p>
+                <p>{teste.desc}</p>
             </section>
 
         </main>
