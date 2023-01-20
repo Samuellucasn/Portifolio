@@ -1,0 +1,23 @@
+.projects {
+    background-color: rgb(68, 68, 68);
+
+    height: 1000px;
+}
+
+.project-one {
+    height: 500px;
+    width: 500px;
+
+    background-color: black;
+
+    border: 1px solid white;
+    .header {
+        height: 30px;
+    
+        background-image: url(/src//assets/template\ abas\ draw\ two.png);
+        background-size: 500px;
+        background-repeat: no-repeat;
+    
+        border: 1px solid white;
+    }
+}

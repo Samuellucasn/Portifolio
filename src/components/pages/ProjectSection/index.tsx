@@ -7,7 +7,7 @@ const Projects: React.FC<any> = () => {
       <Router>
             <section className='projects'>
                 <div className='project-one'>
-                    <Link to={''}></Link>
+                    <div className="header" />
                 </div>
                 <div className='project-two'>
                     <Link to={''}></Link>
@@ -19,6 +19,10 @@ const Projects: React.FC<any> = () => {
                     <Link to={''}></Link>
                 </div>
             </section>
+
+            <Routes>
+                <Route></Route>
+            </Routes>
       </Router>
     )
 }
