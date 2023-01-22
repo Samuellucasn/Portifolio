@@ -1,23 +1,29 @@
 .projects {
-    background-color: rgb(68, 68, 68);
 
     height: 1000px;
 }
 
 .project-one {
-    height: 500px;
-    width: 500px;
-
-    background-color: black;
+    height: 350px;
+    width: 450px;
 
     border: 1px solid white;
+
+    border-radius: 5px;
     .header {
         height: 30px;
     
-        background-image: url(/src//assets/template\ abas\ draw\ two.png);
-        background-size: 500px;
+        background-image: url(/src//assets/template\ abas\ 3.png);
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
     
-        border: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .bg {
+        height: 300px;
+
+        background-image: url(/src/assets/foto-perfil-portifolio.jpg);
+        background-size: cover;
     }
 }

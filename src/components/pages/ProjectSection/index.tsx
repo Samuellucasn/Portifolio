@@ -8,6 +8,7 @@ const Projects: React.FC<any> = () => {
             <section className='projects'>
                 <div className='project-one'>
                     <div className="header" />
+                    <div className="bg" />
                 </div>
                 <div className='project-two'>
                     <Link to={''}></Link>
