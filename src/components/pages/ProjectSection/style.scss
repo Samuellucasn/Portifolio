@@ -1,29 +1,82 @@
-.projects {
+@mixin header {
+    height: 30px;
+    
+    background-image: url(/src//assets/template\ abas\ 3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    height: 1000px;
+    border-bottom: 1px solid white;
 }
 
-.project-one {
-    height: 350px;
+@mixin project-bg ($bg-image: '') {
+    height: 88%;
+
+    background-image: url($bg-image);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin project {
+    height: 250px;
     width: 450px;
+
+    margin-left: 100px;
 
     border: 1px solid white;
 
     border-radius: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.project-one {
+    @include project;
+
     .header {
-        height: 30px;
-    
-        background-image: url(/src//assets/template\ abas\ 3.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-        border-bottom: 1px solid white;
+        @include header
     }
     .bg {
-        height: 300px;
+        @include project-bg('/src/assets/print-library.png')
+    }
+}
 
-        background-image: url(/src/assets/foto-perfil-portifolio.jpg);
-        background-size: cover;
+.project-two {
+    @include project;
+
+    .header {
+        @include header
+    }
+    .bg {
+        @include project-bg('/src/assets/calendar.png')
+    }
+}
+
+.project-three {
+    @include project;
+
+    .header {
+        @include header
+    }
+    .bg {
+        @include project-bg('/src/assets/print-sc-cafeteria.png')
+    }
+}
+
+.project-four {
+    @include project;
+
+    .header {
+        @include header
+    }
+    .bg {
+        @include project-bg('/src/assets/print-player-project.png')
     }
 }
