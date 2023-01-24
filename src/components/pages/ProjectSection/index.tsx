@@ -6,20 +6,36 @@ const Projects: React.FC<any> = () => {
     return (
         <section className='projects'>
             <div className='project-one'>
-                <div className="header" />
-                <div className="bg" />
+                <div className="thumbnail" />
+                <div className="info">
+                    <p></p>
+                    <div className="code" />
+                    <div className="website" />
+                </div>
             </div>
             <div className='project-two'>
-                <div className="header" />
-                <div className="bg" />
+                <div className="thumbnail" />
+                <div className="info">
+                    <p></p>
+                    <div className="code" />
+                    <div className="website" />
+                </div>
             </div>
             <div className='project-three'>
-                <div className="header" />
-                <div className="bg" />
+                <div className="thumbnail" />
+                <div className="info">
+                    <p></p>
+                    <div className="code" />
+                    <div className="website" />
+                </div>
             </div>
             <div className='project-four'>
-                <div className="header" />
-                <div className="bg" />
+                <div className="thumbnail" />
+                <div className="info">
+                    <p></p>
+                    <div className="code" />
+                    <div className="website" />
+                </div>
             </div>
         </section>
     )
