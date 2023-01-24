@@ -1,58 +1,57 @@
-@mixin thumbnail {
-    
+@mixin thumbnail ($bg-image: '') {
+    background-image: $bg-image;
+    background-size: cover;
+    background-position: center;
+
+    width: 400px;
+    height: 200px;
 }
 
 .projects {
+    padding: 100px 300px;
+    
+    margin: auto;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 .project-one {
 
-    height: 500px;
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
 
+    border: 1px solid white;
+    
     .thumbnail {
-        width: 400px;
-        height: 300px;
+        @include thumbnail(url('/src/assets/print-library.png'));
 
-        background-color: green;
     }
 
-    .info {
-        width: 600px;
-        height: 300px;
+    .links {
+        height: 100px;
+        width: 100%;
 
-        background-color: blue;
+        background-color: #1b1b1b;
 
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 50px;
 
-        p {
-            height: 300px;
-            width: 100%;
+        .code {
+            height: 50px;
+            width: 150px;
 
-            background-color: red;
+            background-color: #ffff;
         }
 
-        .wrapper {
-            height: 100px;
-            width: 300px;
+        .website {
+            height: 50px;
+            width: 150px;
 
-            background-color: aqua;
-
-            display: flex;
-            justify-content: space-between;
+            background-color: #ffff;
         }
     }
 }
