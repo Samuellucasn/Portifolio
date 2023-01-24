@@ -9,8 +9,10 @@ const Projects: React.FC<any> = () => {
                 <div className="thumbnail" />
                 <div className="info">
                     <p></p>
-                    <div className="code" />
-                    <div className="website" />
+                    <div className="wrapper">
+                        <div className="code" />
+                        <div className="website" />
+                    </div>
                 </div>
             </div>
             <div className='project-two'>
