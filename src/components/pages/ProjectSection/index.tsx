@@ -1,6 +1,8 @@
 import './style.scss'
 
-import {Route, Link, Routes, BrowserRouter as Router} from 'react-router-dom'
+import {FiGithub} from 'react-icons/fi'
+import {MdComputer} from 'react-icons/md'
+
 
 const Projects: React.FC<any> = () => {
     return (
@@ -8,8 +10,8 @@ const Projects: React.FC<any> = () => {
             <div className='project-one'>
                 <div className="thumbnail" />
                 <div className="links">
-                    <div className="code" />
-                    <div className="website" />
+                    <a href=""><button className="code" > <FiGithub /> code </button></a>
+                    <button className="website" > <MdComputer /> website </button>
                 </div>
             </div>
             <div className='project-two'>
