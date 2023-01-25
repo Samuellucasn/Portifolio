@@ -54,6 +54,8 @@
     margin: auto;
 
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .project-one {
@@ -68,12 +70,8 @@
     .links {
         @include links;
 
-        a {
-            text-decoration: none;
-
-            .code {
-                @include button;
-            }
+        .code {
+            @include button;
         }
 
         .website {
@@ -84,12 +82,66 @@
 
 .project-two {
 
+    @include project;
+
+    .thumbnail {
+        @include thumbnail(url('/src/assets/print-sc-cafeteria.png'));
+
+    }
+
+    .links {
+        @include links;
+
+        .code {
+            @include button;
+        }
+
+        .website {
+            @include button;
+        }
+    }
 }
 
 .project-three {
 
+    @include project;
+
+    .thumbnail {
+        @include thumbnail(url('/src/assets/calendar2.png'));
+
+    }
+
+    .links {
+        @include links;
+
+        .code {
+            @include button;
+        }
+
+        .website {
+            @include button;
+        }
+    }
 }
 
 .project-four {
 
+    @include project;
+
+    .thumbnail {
+        @include thumbnail(url('/src/assets/print-player-project.png'));
+
+    }
+
+    .links {
+        @include links;
+
+        .code {
+            @include button;
+        }
+
+        .website {
+            @include button;
+        }
+    }
 }
