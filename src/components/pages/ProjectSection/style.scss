@@ -1,3 +1,11 @@
+@mixin thumbnail ($bg-image: '') {
+    background-image: $bg-image;
+    background-size: cover;
+    background-position: center;
+
+    width: 400px;
+    height: 170px;
+}
 
 .projects {
     padding: 100px 200px;
@@ -10,28 +18,18 @@
     gap: 40px;
 }
 
-.project-one {
-    .thumbnail {
-        background-image: url('/src/assets/print-library.png');
-    }
+.thumbnail-one {
+    @include thumbnail(url('/src/assets/print-library.png'))
 }
 
-.project-two {
-    .thumbnail {
-        background-image: url('/src/assets/print-sc-cafeteria.png');
-    }
+.thumbnail-two {
+    @include thumbnail(url('/src/assets/print-sc-cafeteria.png'))
 }
 
-.project-three {
-
-    .thumbnail {
-        background-image: url('/src/assets/calendar2.png');
-    }
+.thumbnail-three {
+    @include thumbnail(url('/src/assets/calendar2.png'))
 }
 
-.project-four {
-
-    .thumbnail {
-        background-image: url('/src/assets/print-player-project.png');
-    }
+.thumbnail-four {
+    @include thumbnail(url('/src/assets/print-player-project.png'))
 }

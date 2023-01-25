@@ -1,12 +1,3 @@
-@mixin thumbnail ($bg-image: '') {
-    background-image: $bg-image;
-    background-size: cover;
-    background-position: center;
-
-    width: 450px;
-    height: 200px;
-}
-
 @mixin flexbox-center {
     display: flex;
     justify-content: center;
@@ -24,16 +15,8 @@
     border-radius: 5px;
 }
 
-.thumbnail {
-    background-size: cover;
-    background-position: center;
-
-    width: 450px;
-    height: 200px;
-}
-
 .links {
-    height: 100px;
+    height: 80px;
     width: 100%;
 
     @include flexbox-center;
