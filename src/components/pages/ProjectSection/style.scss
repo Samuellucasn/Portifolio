@@ -1,52 +1,3 @@
-@mixin thumbnail ($bg-image: '') {
-    background-image: $bg-image;
-    background-size: cover;
-    background-position: center;
-
-    width: 480px;
-    height: 230px;
-}
-
-@mixin flexbox-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #ffffff0c;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-@mixin links {
-    height: 100px;
-    width: 100%;
-
-    @include flexbox-center;
-    gap: 50px;
-}
-
-@mixin button {
-    height: 50px;
-    width: 150px;
-
-    @include flexbox-center;
-    gap: 10px;
-
-    background-color: #f5f5f5;
-
-    border-radius: 10px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-}
 
 .projects {
     padding: 100px 200px;
@@ -54,94 +5,33 @@
     margin: auto;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
 
 .project-one {
-
-    @include project;
-
     .thumbnail {
-        @include thumbnail(url('/src/assets/print-library.png'));
-
-    }
-
-    .links {
-        @include links;
-
-        .code {
-            @include button;
-        }
-
-        .website {
-            @include button;
-        }
+        background-image: url('/src/assets/print-library.png');
     }
 }
 
 .project-two {
-
-    @include project;
-
     .thumbnail {
-        @include thumbnail(url('/src/assets/print-sc-cafeteria.png'));
-
-    }
-
-    .links {
-        @include links;
-
-        .code {
-            @include button;
-        }
-
-        .website {
-            @include button;
-        }
+        background-image: url('/src/assets/print-sc-cafeteria.png');
     }
 }
 
 .project-three {
 
-    @include project;
-
     .thumbnail {
-        @include thumbnail(url('/src/assets/calendar2.png'));
-
-    }
-
-    .links {
-        @include links;
-
-        .code {
-            @include button;
-        }
-
-        .website {
-            @include button;
-        }
+        background-image: url('/src/assets/calendar2.png');
     }
 }
 
 .project-four {
 
-    @include project;
-
     .thumbnail {
-        @include thumbnail(url('/src/assets/print-player-project.png'));
-
-    }
-
-    .links {
-        @include links;
-
-        .code {
-            @include button;
-        }
-
-        .website {
-            @include button;
-        }
+        background-image: url('/src/assets/print-player-project.png');
     }
 }
