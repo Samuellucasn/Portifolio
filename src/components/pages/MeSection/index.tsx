@@ -3,7 +3,7 @@ import './style.scss'
 import {useSkillProp} from '../../../hooks/useSkillProp'
 
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
-import {MdEmail} from 'react-icons/md'
+import {MdAlternateEmail} from 'react-icons/md'
 
 import Stamp from '../../Stamp'
 import React, { useState } from 'react'
@@ -25,7 +25,10 @@ const Me: React.FC<any> = () => {
                     <ul>
                         <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp></a> GitHub</li>
                         <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp style={{backgroundColor: '#ffff'}}><BsGithub /></Stamp></a> Linkedin</li>
-                        <li><button onClick={(e) => {document.execCommand("copy")}} value={'samuellucasnogueira@gmail'}><Stamp style={{backgroundColor: '#d15d5d'}}><MdEmail /></Stamp></button> E-mail</li>
+                        <li><button onClick={() => {
+                            navigator.clipboard.writeText("samuellucasnogueira@gmail.com")
+                            alert()
+                            }}><Stamp style={{backgroundColor: '#d15d5d'}}><MdAlternateEmail /></Stamp></button> E-mail</li>
                     </ul>
                 </div>
             </section>

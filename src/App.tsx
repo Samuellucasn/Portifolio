@@ -1,4 +1,5 @@
 import './App.scss'
+import '/src/style/animation.scss'
 
 import Home from './components/pages/HomeSection'
 import Me from './components/pages/MeSection'
@@ -7,7 +8,7 @@ import Projects from './components/pages/ProjectSection'
 function App() {
   return (
     <>
-    <header>
+    {/* <header>
         <nav>
           <ul>
             <li><a href="">Home</a></li>
@@ -15,7 +16,7 @@ function App() {
             <li><a href="">Projects</a></li>
           </ul>
         </nav>
-    </header>
+    </header> */}
 
     <main>
       <Home />
