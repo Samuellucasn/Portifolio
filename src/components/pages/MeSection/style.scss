@@ -1,13 +1,14 @@
 @use '/src/style/variables.scss' as variables;
 
 .about-main {
-    height: 100vh;
 
     background-color: #161616;
     color: #fff;
     
     display: flex;
     justify-content: space-between;
+
+    padding: 10px;
 }
 
 .about-me {
@@ -18,6 +19,7 @@
 
     margin: auto;
     margin-bottom: 250px;
+    margin-top: 20px;
 
     .perfil-img {
         background-image: url(/src//assets/fot-perfil-portifolio-bom.jpg);
@@ -107,7 +109,6 @@
             list-style: none;
             
             li {
-                cursor: pointer;
                 & .stamp {
                     border: 2px solid #bababa;
 

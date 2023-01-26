@@ -23,9 +23,9 @@ const Me: React.FC<any> = () => {
 
                 <div className="contacts">
                     <ul>
-                        <li><a href=""><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp></a> GitHub</li>
-                        <li><a href=""><Stamp style={{backgroundColor: '#ffff'}}><BsGithub /></Stamp></a> Linkedin</li>
-                        <li><a href=""><Stamp style={{backgroundColor: '#d15d5d'}}><MdEmail /></Stamp></a> E-mail</li>
+                        <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp></a> GitHub</li>
+                        <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp style={{backgroundColor: '#ffff'}}><BsGithub /></Stamp></a> Linkedin</li>
+                        <li><button onClick={(e) => {document.execCommand("copy")}} value={'samuellucasnogueira@gmail'}><Stamp style={{backgroundColor: '#d15d5d'}}><MdEmail /></Stamp></button> E-mail</li>
                     </ul>
                 </div>
             </section>

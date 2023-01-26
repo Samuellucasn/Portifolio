@@ -5,6 +5,9 @@
 
     width: 400px;
     height: 170px;
+
+    border: 1px solid #fff;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .projects {
@@ -16,6 +19,15 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+
+    .others {
+        width: 200px;
+        height: 50px;
+    
+        border-radius: 50px;
+
+        background-color: #fff;
+    }
 }
 
 .thumbnail-one {
