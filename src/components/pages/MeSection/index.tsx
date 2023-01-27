@@ -2,8 +2,7 @@ import './style.scss'
 
 import {useSkillProp} from '../../../hooks/useSkillProp'
 
-import {BsLinkedin, BsGithub} from 'react-icons/bs'
-import {MdAlternateEmail} from 'react-icons/md'
+import {SiGmail, FaLinkedinIn, FiGithub} from 'react-icons/all'
 
 import Stamp from '../../Stamp'
 import React, { useState } from 'react'
@@ -23,12 +22,12 @@ const Me: React.FC<any> = () => {
 
                 <div className="contacts">
                     <ul>
-                        <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp style={{backgroundColor: '#4a8df2'}}><BsLinkedin /></Stamp></a> GitHub</li>
-                        <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp style={{backgroundColor: '#ffff'}}><BsGithub /></Stamp></a> Linkedin</li>
+                        <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp ><FaLinkedinIn /></Stamp></a> GitHub</li>
+                        <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp><FiGithub /></Stamp></a> Linkedin</li>
                         <li><button onClick={() => {
                             navigator.clipboard.writeText("samuellucasnogueira@gmail.com")
                             alert()
-                            }}><Stamp style={{backgroundColor: '#d15d5d'}}><MdAlternateEmail /></Stamp></button> E-mail</li>
+                            }}><Stamp><SiGmail /></Stamp></button> E-mail</li>
                     </ul>
                 </div>
             </section>
@@ -40,7 +39,7 @@ const Me: React.FC<any> = () => {
                     <ul>
                         {
                             skillProps.map((v: any, i: number) => {
-                                return <li key={i} onClick={() => setSkillId(i)} ><Stamp style={{backgroundColor: v.color}}>< v.icon /></Stamp></li>
+                                return <li key={i} onClick={() => setSkillId(i)} ><Stamp>< v.icon style={{fill: v.color}}/></Stamp></li>
                             })
                         }
                     </ul>

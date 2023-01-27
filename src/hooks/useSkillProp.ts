@@ -1,9 +1,6 @@
 import {} from '../interfaces/types'
 
-import {FaReact, FaGitAlt, FaCss3Alt, FaNodeJs, FaHtml5, FaSass} from 'react-icons/fa'
-import {DiJavascript1} from 'react-icons/di'
-import {SiTypescript, SiMongodb} from 'react-icons/si'
-import {GrMysql} from 'react-icons/gr'
+import {FaReact, FaGitAlt, FaCss3Alt, FaNodeJs, FaHtml5, FaSass, DiJavascript1, SiTypescript, SiMongodb, GrMysql} from 'react-icons/all'
 
 export const useSkillProp : any = (id : number) => {
     const skillProps = [

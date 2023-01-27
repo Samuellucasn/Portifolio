@@ -23,6 +23,11 @@ function App() {
       <Me />
       <Projects />
     </main>
+
+    <footer>
+      <h3>Contato</h3>
+      
+    </footer>
     </>    
   )
 }

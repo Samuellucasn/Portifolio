@@ -1,16 +1,16 @@
 @use '/src/style/variables.scss' as variables;
 
 .about-main {
-    background-image: url(/src/assets/red-moon.png);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 400px;
-    background-color: #000;
+    // background-image: url(/src/assets/red-moon.png);
+    // background-repeat: no-repeat;
+    // background-position: center bottom;
+    // background-size: 400px;
+    // background-color: #000;
     color: #fff;
 
-    // box-shadow: 1px 1px 1px 1px #fff;
+    // // box-shadow: 1px 1px 1px 1px #fff;
 
-    border-bottom: 1px solid white;
+    border-top: 1px solid white;
     
     display: flex;
     justify-content: space-between;
@@ -75,17 +75,12 @@
 
                 font-size: 12px;
                 & .stamp {
-                    width: 35px; 
-                    height: 35px;
+                    width: 30px; 
+                    height: 30px;
 
                     & :first-child {
-                        width: 30px;
-                        height: 30px;
-
-                        border-radius: 50%;
-
-                        color: #000;
-                        
+                        width: 15px;
+                        height: 15px;
                     }
                 }
             }
@@ -120,13 +115,13 @@
             
             li {
                 & .stamp {
-                    border: 2px solid #bababa;
+                    border: 2px solid #dedede;
+
+                    background-color: #242424;
 
                     :first-child {
                         width: 28px;
                         height: 28px;
-    
-                        fill: #101010;
                     }   
                 }
             }
