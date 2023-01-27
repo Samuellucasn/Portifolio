@@ -1,7 +1,9 @@
-import { ReactElement, useState } from 'react'
+import { useState } from 'react'
 import './style.scss'
 
 import Star from '../../Star'
+
+import {BsFillMouseFill} from 'react-icons/bs'
 
 interface clickArray {
     x: number,
@@ -30,6 +32,9 @@ const Home: React.FC<any> = () => {
                         <div className='moon' />
                     </div>
                 </div>
+                {/* <div className="click-star">
+                    <BsFillMouseFill fill='white'/>
+                </div> */}
                 
                 <div className='background'/>
 

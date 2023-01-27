@@ -1,9 +1,16 @@
 @use '/src/style/variables.scss' as variables;
 
 .about-main {
-
-    background-color: #161616;
+    background-image: url(/src/assets/red-moon.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 400px;
+    background-color: #000;
     color: #fff;
+
+    // box-shadow: 1px 1px 1px 1px #fff;
+
+    border-bottom: 1px solid white;
     
     display: flex;
     justify-content: space-between;
@@ -35,6 +42,8 @@
     }
 
     h1 {
+        font-size: 2rem;
+
         width: 300px;
 
         text-align: center;
