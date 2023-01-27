@@ -1,9 +1,8 @@
 import './style.scss'
 
-import {FiGithub} from 'react-icons/fi'
-import {MdComputer} from 'react-icons/md'
+import {FiGithub, MdComputer} from 'react-icons/all'
 
-const Project: React.FC<any> = ({thumbnail, code, web}) => {
+const ProjectCard: React.FC<any> = ({thumbnail, code, web}) => {
     return (
         <div className='project'>
                 <div className='header' />
@@ -16,4 +15,4 @@ const Project: React.FC<any> = ({thumbnail, code, web}) => {
     )
 }
 
-export default Project
+export default ProjectCard

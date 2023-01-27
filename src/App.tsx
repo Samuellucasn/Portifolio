@@ -5,6 +5,8 @@ import Home from './components/pages/HomeSection'
 import Me from './components/pages/MeSection'
 import Projects from './components/pages/ProjectSection'
 
+import {FiGithub, FaLinkedinIn} from 'react-icons/all'
+
 function App() {
   return (
     <>
@@ -25,8 +27,16 @@ function App() {
     </main>
 
     <footer>
-      <h3>Contato</h3>
-      
+      <h3>Contato</h3> 
+      <p>Rio de Janeiro - RJ</p>
+
+      <div className="email-copy" >
+        <span>samuellucasnogueira@gmail.com</span>
+      </div>
+      <div className="contact-icons">
+        <a href="https://github.com/Samuellucasn"><FiGithub /></a>
+        <a href="https://www.linkedin.com/in/samuel-lucas-515b12218/"><FaLinkedinIn /> </a>
+      </div>
     </footer>
     </>    
   )

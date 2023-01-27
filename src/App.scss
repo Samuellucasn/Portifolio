@@ -31,3 +31,38 @@ header{
     }
   }
 }
+
+footer {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .email-copy {
+    background-color: #242424;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+  }
+  
+  .contact-icons {
+    :first-child, :last-child {
+      margin: 10px;
+
+      width: 30px;
+      height: 30px;
+
+      cursor: pointer;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
