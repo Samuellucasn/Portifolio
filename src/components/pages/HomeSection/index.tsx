@@ -39,8 +39,8 @@ const Home: React.FC<any> = () => {
                 <div className='background'/>
 
                 <div className="welcome-text">
-                    <p>Bem vindo ao meu</p>
-                    <h1>Portifolio</h1>
+                    <p>Front-End Developer</p>
+                    <h1>Samuel Lucas</h1>
                 </div>
             </section>
             {

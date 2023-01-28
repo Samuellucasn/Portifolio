@@ -40,7 +40,7 @@
     
     .welcome-text {
         position: absolute;
-        left: 200px;
+        left: 100px;
         bottom: 200px;
 
         z-index: 30;
@@ -57,11 +57,11 @@
         }
 
         h1 {
-            font-size: 7.5em;
+            font-size: 5.5em;
 
             color: #000;
 
-            -webkit-text-stroke: #fff 2px;
+            -webkit-text-stroke: #fff 1px;
         }
     }
 }
