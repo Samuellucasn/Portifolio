@@ -5,12 +5,14 @@
     // background-repeat: no-repeat;
     // background-position: center bottom;
     // background-size: 400px;
-    // background-color: #000;
+    background-color: variables.$default-body-bg;
     color: #fff;
 
     // // box-shadow: 1px 1px 1px 1px #fff;
 
     border-top: 1px solid white;
+
+    box-shadow: 1px 1px 1px 1px white;
     
     display: flex;
     justify-content: space-between;
@@ -25,8 +27,8 @@
     align-items: center;
 
     margin: auto;
-    margin-bottom: 250px;
-    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-top: 50px;
 
     .perfil-img {
         background-image: url(/src//assets/fot-perfil-portifolio-bom.jpg);
@@ -130,6 +132,8 @@
 
     h1 {
         align-self: flex-start;
+        
+        font-size: 2rem;
     }
 
     p {
