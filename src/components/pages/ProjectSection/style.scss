@@ -10,6 +10,10 @@
 
     border: 1px solid #fff;
     border-radius: 0px 0px 10px 10px;
+
+    @media (max-width: 440px) {
+        width: 300px;
+    }
 }
 
 .projects {
@@ -25,6 +29,7 @@
     gap: 40px;
 
     .others {
+        
         width: 200px;
         height: 50px;
     
@@ -35,7 +40,7 @@
 }
 
 .thumbnail-one {
-    @include thumbnail(url('/src/assets/print-library-jpg.jpg'))
+    @include thumbnail(url('/src/assets/print-library-jpg.jpg')) 
 }
 
 .thumbnail-two {

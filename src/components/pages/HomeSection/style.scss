@@ -40,8 +40,8 @@
     
     .welcome-text {
         position: absolute;
-        left: 100px;
-        bottom: 200px;
+        left: 150px;
+        bottom: 150px;
 
         z-index: 30;
 
@@ -76,6 +76,8 @@
         height: variables.$saturn-height-width;
 
         @include bgImage(url('/src/assets/saturn.png'));
+
+        animation: floating 2s infinite linear;
 
         border-radius: 0;
         margin-bottom: 100px;
@@ -112,6 +114,8 @@
         height: variables.$jupiter-height-width;
         
         @include bgImage(url('/src/assets/Jupiter.png'));
+
+        animation: floating 2s infinite linear;
 
         margin-top: 100px;
     }    
@@ -157,4 +161,22 @@
     height: 20px;
 
     margin: auto;
+}
+
+@media (max-width: 580px) {
+    .home-main .welcome-text {
+        left: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-main .welcome-text {
+        left: 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-main .welcome-text {
+        left: 20px;
+    }
 }
