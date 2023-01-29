@@ -35,11 +35,11 @@
 }
 
 .thumbnail-one {
-    @include thumbnail(url('/src/assets/print-library.png'))
+    @include thumbnail(url('/src/assets/print-library-jpg.jpg'))
 }
 
 .thumbnail-two {
-    @include thumbnail(url('/src/assets/print-sc-cafeteria.png'))
+    @include thumbnail(url('/src/assets/print-sc-cafeteria-jpg.jpg'))
 }
 
 .thumbnail-three {

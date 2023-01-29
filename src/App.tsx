@@ -1,4 +1,4 @@
-import {useEffect, useContext} from 'react'
+import {useEffect} from 'react'
 import './App.scss'
 import '/src/style/animation.scss'
 
@@ -13,7 +13,10 @@ import {FiGithub, FaLinkedinIn} from 'react-icons/all'
 
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true
+    })
   }, [])
 
   return (
