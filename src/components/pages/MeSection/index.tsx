@@ -15,7 +15,7 @@ const Me: React.FC<any> = () => {
     return (
         <section className='about-main'>
 
-            <section className="about-me">
+            <section className="about-me" data-aos="fade-up">
                 <div className="perfil-img" />
                 <h1>Sobre mim</h1>
                 <p>Jovem de 22 anos do Rio de Janeiro-RJ, atuo como desenvolvedor Front-End e estudo diariamente para me tornar Full-Stack. Programo a um ano desenvolvendo aplicações e sites que desafiam minhas limitações e me estimulam a evoluir. Amo programar e vejo na area de tech um futuro brilhante.</p>
@@ -32,7 +32,7 @@ const Me: React.FC<any> = () => {
                 </div>
             </section>
 
-            <section className="stack-wrapper">
+            <section className="stack-wrapper"  data-aos="fade-down">
                 <h1>Stack</h1>
 
                 <div className="stack">

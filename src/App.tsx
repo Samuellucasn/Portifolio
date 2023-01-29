@@ -1,5 +1,9 @@
+import {useEffect, useContext} from 'react'
 import './App.scss'
 import '/src/style/animation.scss'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Home from './components/pages/HomeSection'
 import Me from './components/pages/MeSection'
@@ -8,6 +12,10 @@ import Projects from './components/pages/ProjectSection'
 import {FiGithub, FaLinkedinIn} from 'react-icons/all'
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <>
     {/* <header>
