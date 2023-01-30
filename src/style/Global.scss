@@ -20,5 +20,12 @@ body {
     button {
         background-color: transparent;
         border: none;
+
+        &:hover {
+            cursor: pointer;
+            
+            transform: scale(1.01);
+            transition: scale 1s linear;
+        }
     }
 }

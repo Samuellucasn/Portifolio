@@ -45,9 +45,11 @@ const Me: React.FC<any> = () => {
                     </ul>
                 </div>
 
-                <h2>{teste.name}</h2>
+                <article>
+                    <h2>{teste.name}</h2>
 
-                <p>{teste.desc}</p>
+                    <p>{teste.desc}</p>
+                </article>
             </section>
 
         </section>

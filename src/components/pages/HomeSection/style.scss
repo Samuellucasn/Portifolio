@@ -176,7 +176,15 @@
 }
 
 @media (max-width: 420px) {
-    .home-main .welcome-text {
-        left: 20px;
+    .home-main{
+        .saturn-wrapper {
+            display: none;
+        }
+        .jupiter-wrapper {
+            display: none;
+        }
+        .welcome-text {
+            left: 20px;
+        }
     }
 }

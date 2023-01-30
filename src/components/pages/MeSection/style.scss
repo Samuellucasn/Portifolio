@@ -18,9 +18,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 10px;
+    padding: 20px;
 }
 
+.perfil-img {
+    background-image: url(/src//assets/foto-perfil-contorno.jpg);
+    background-color: #234c8a;
+    background-size: contain;
+    background-position: center bottom;
+    opacity: .8;
+    
+    width: variables.$perfil-height-width;
+    height: variables.$perfil-height-width;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px
+}
 .about-me {
     display: flex;
     flex-direction: column;
@@ -28,30 +42,15 @@
     align-items: center;
 
     margin: auto;
-    // margin-bottom: 200px;
     margin-top: 50px;
 
     padding: 20px;
 
-    .perfil-img {
-        background-image: url(/src//assets/foto-perfil-contorno.jpg);
-        background-color: #234c8a;
-        background-size: contain;
-        background-position: center bottom;
-        opacity: .8;
-        
-        width: variables.$perfil-height-width;
-        height: variables.$perfil-height-width;
-
-        border-radius: 50%;
-
-        margin-bottom: 20px
-    }
 
     h1 {
         font-size: 2rem;
 
-        width: 300px;
+        max-width: 300px;
 
         text-align: center;
 
@@ -144,5 +143,14 @@
 
     p {
         max-width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .stack-wrapper p, .stack-wrapper h2 {
+        display: none;
+    }
+    .stack-wrapper h1 {
+        align-self: center ;
     }
 }

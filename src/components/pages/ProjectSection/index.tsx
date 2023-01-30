@@ -10,7 +10,7 @@ const Projects: React.FC<any> = () => {
             <ProjectCard thumbnail='thumbnail-three' code='https://github.com/Samuellucasn/Calendar' web='http://calendar-233.netlify.app/'/>
             <ProjectCard thumbnail='thumbnail-four' code='https://github.com/Samuellucasn/PlayerDeMusicas' web='https://samuellucasn.github.io/PlayerDeMusicas/'/>
 
-            <a href="https://github.com/Samuellucasn?tab=repositories" target={'_blank'} rel={'external'} ><button className="others" > Veja outros Projetos </button></a>
+            <a href="https://github.com/Samuellucasn?tab=repositories" target={'_blank'} rel={'external'} ><button className="others" > Veja outros Projetos &gt;&gt;</button></a>
         </section>
     )
 }

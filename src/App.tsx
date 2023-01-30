@@ -38,15 +38,15 @@ function App() {
     </main>
 
     <footer>
-      <h3>Contato</h3> 
+      <h3></h3> 
       <p>Rio de Janeiro - RJ</p>
 
       <div className="email-copy" >
         <span>samuellucasnogueira@gmail.com</span>
       </div>
       <div className="contact-icons">
-        <a href="https://github.com/Samuellucasn"><FiGithub /></a>
-        <a href="https://www.linkedin.com/in/samuel-lucas-515b12218/"><FaLinkedinIn /> </a>
+        <a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><FiGithub /></a>
+        <a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><FaLinkedinIn /> </a>
       </div>
     </footer>
     </>    

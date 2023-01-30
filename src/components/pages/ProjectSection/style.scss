@@ -54,3 +54,9 @@
 .thumbnail-four {
     @include thumbnail(url('/src/assets/print-player-project.png'))
 }
+
+@media (max-width:400px) {
+    .projects {
+        padding: 0;
+    }
+}
