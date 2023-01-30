@@ -145,13 +145,3 @@
         max-width: 400px;
     }
 }
-
-
-@media (max-width: 500px) {
-    .stack-wrapper p, .stack-wrapper h2 {
-        display: none;
-    }
-    .stack-wrapper h1 {
-        align-self: center ;
-    }
-}

@@ -37,7 +37,7 @@ const Me: React.FC<any> = () => {
 
                 <h1>Tecnologias</h1>
 
-                <span><hr /><p>{teste.name}</p></span>
+                <span><p>{teste.name}</p></span>
 
                 <div className="stack">
                     <ul>
