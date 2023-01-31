@@ -3,7 +3,7 @@ import './style.scss'
 
 import Star from '../../Star'
 
-import {BsFillMouseFill} from 'react-icons/bs'
+import {HiCursorClick} from 'react-icons/all'
 
 interface clickArray {
     x: number,
@@ -32,9 +32,10 @@ const Home: React.FC<any> = () => {
                         <div className='moon' />
                     </div>
                 </div>
-                {/* <div className="click-star">
-                    <BsFillMouseFill fill='white'/>
-                </div> */}
+                <div className="click-star">
+                    <HiCursorClick />
+                    <p>crie uma estrela</p>
+                </div>
                 
                 <div className='background'/>
 

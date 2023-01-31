@@ -145,3 +145,17 @@
         max-width: 400px;
     }
 }
+
+@media (max-width: 720px) {
+    .stack-wrapper p{
+        margin-bottom: 40px;
+    }
+    
+    .stack-wrapper span p{
+        margin-bottom: 10px;
+    }
+
+    .about-me .contacts {
+        margin-bottom: 20px;
+    }
+}

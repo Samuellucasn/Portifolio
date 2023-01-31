@@ -55,8 +55,19 @@
     @include thumbnail(url('/src/assets/print-player-project.png'))
 }
 
-@media (max-width:400px) {
+@media (max-width: 440px) {
     .projects {
         padding: 0;
+
+        .others {
+            width: 160px;
+        }
+    }
+
+}
+
+@media (max-width: 500px) and (min-width: 440px) {
+    .projects {
+        padding: 20px 200px;
     }
 }

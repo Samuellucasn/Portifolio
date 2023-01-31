@@ -18,8 +18,8 @@ const Me: React.FC<any> = () => {
             <div className="perfil-img" />
             <div className="contacts">
                     <ul>
-                        <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp ><FaLinkedinIn /></Stamp></a> GitHub</li>
-                        <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp><FiGithub /></Stamp></a> Linkedin</li>
+                        <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp ><FiGithub/></Stamp></a> GitHub</li>
+                        <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp><FaLinkedinIn/></Stamp></a> Linkedin</li>
                         <li><button onClick={() => {
                             navigator.clipboard.writeText("samuellucasnogueira@gmail.com")
                             alert()
@@ -33,7 +33,7 @@ const Me: React.FC<any> = () => {
             <section className="stack-wrapper" data-aos="fade-up">
                 
                 <h1>Sobre mim</h1>
-                <p>Jovem de 22 anos do Rio de Janeiro-RJ, atuo como desenvolvedor Front-End e estudo diariamente para me tornar Full-Stack. Programo a um ano desenvolvendo aplicações e sites que desafiam minhas limitações e me estimulam a evoluir. Amo programar e vejo na area de tech um futuro brilhante.</p>
+                <p>Jovem de 22 anos, atuo como desenvolvedor Front-End e estudo diariamente para me tornar Full-Stack. Programo a um ano desenvolvendo aplicações e sites que desafiam minhas limitações e me estimulam a evoluir. Amo programar e vejo na area de tech um futuro brilhante.</p>
 
                 <h1>Tecnologias</h1>
 
