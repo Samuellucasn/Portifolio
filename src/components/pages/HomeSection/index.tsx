@@ -7,15 +7,24 @@ import {HiCursorClick} from 'react-icons/all'
 
 interface clickArray {
     x: number,
-    y: number
+    y: number, 
+    t: number
 }
 
 const Home: React.FC<any> = () => {
     const [clickArray, setClickArray] = useState<clickArray[]>([])
 
+    clickArray && setInterval(() => {
+        clickArray.map((axis: any) => {
+            axis.t -= 5
+        })
+    }, 5000)
+
+    console.log(clickArray)
+
     return (
         <>
-            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY}])}>
+            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 90}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
