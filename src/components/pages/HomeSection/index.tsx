@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './style.scss'
 
 import Star from '../../Star'
@@ -14,17 +14,25 @@ interface clickArray {
 const Home: React.FC<any> = () => {
     const [clickArray, setClickArray] = useState<clickArray[]>([])
 
-    clickArray && setInterval(() => {
-        clickArray.map((axis: any) => {
-            axis.t -= 5
-        })
-    }, 5000)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setClickArray(clickArray.map((axis: any) => (
+                {...axis, t: axis.t - 1}
+            )))
+        }, 1000)
 
+        return () => clearInterval(interval)
+    }, [clickArray])
+
+    // setClickArray(clickArray.filter((axis: any) => {
+    //     axis.t !== 0
+    // })) 
+    
     console.log(clickArray)
 
     return (
         <>
-            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 90}])}>
+            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 60}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
