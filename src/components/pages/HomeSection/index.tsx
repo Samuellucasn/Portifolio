@@ -16,23 +16,23 @@ const Home: React.FC<any> = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setClickArray(clickArray.map((axis: any) => (
-                {...axis, t: axis.t - 1}
-            )))
+            setClickArray(
+                clickArray
+                    .map((axis: any) => (
+                    {...axis, t: axis.t - 1}
+                    ))
+                    .filter((axis: any) => {
+                        return axis.t !== 0
+                    })
+            )
         }, 1000)
 
         return () => clearInterval(interval)
     }, [clickArray])
 
-    // setClickArray(clickArray.filter((axis: any) => {
-    //     axis.t !== 0
-    // })) 
-    
-    console.log(clickArray)
-
     return (
         <>
-            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 60}])}>
+            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 65}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
