@@ -70,3 +70,19 @@ footer {
     font-weight: 400;
   }
 }
+
+.flash-mensage {
+  position: fixed;
+  left: 43%;
+  bottom: 20px;
+  z-index: 100;
+
+  padding:5px 10px;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  opacity: .8;
+
+  text-align: center;
+}

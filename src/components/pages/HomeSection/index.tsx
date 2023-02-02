@@ -29,10 +29,12 @@ const Home: React.FC<any> = () => {
 
         return () => clearInterval(interval)
     }, [clickArray])
+    
+    console.log(clickArray)
 
     return (
         <>
-            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 65}])}>
+            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 62}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >

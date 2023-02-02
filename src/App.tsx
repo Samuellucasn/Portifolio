@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import './App.scss'
 import '/src/style/animation.scss'
 
@@ -12,6 +12,8 @@ import Projects from './components/pages/ProjectSection'
 import {FiGithub, FaLinkedinIn} from 'react-icons/all'
 
 function App() {
+  const [renderFlashMensage, setRenderFlashMensage] = useState(false)
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -21,6 +23,12 @@ function App() {
 
   return (
     <>
+      {
+      renderFlashMensage && 
+        <div className='flash-mensage'>
+          <span>endereço de email copiado</span>
+        </div>
+    }
     {/* <header>
         <nav>
           <ul>
@@ -33,15 +41,14 @@ function App() {
 
     <main>
       <Home />
-      <Me />
+      <Me flashMensage={renderFlashMensage}/>
       <Projects />
     </main>
 
     <footer>
-      <h3></h3> 
       <p>Rio de Janeiro - RJ</p>
 
-      <div className="email-copy" >
+      <div className="email-copy" onClick={() => setRenderFlashMensage(true)}>
         <span>samuellucasnogueira@gmail.com</span>
       </div>
       <div className="contact-icons">
@@ -49,6 +56,8 @@ function App() {
         <a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><FaLinkedinIn /> </a>
       </div>
     </footer>
+
+ 
     </>    
   )
 }
