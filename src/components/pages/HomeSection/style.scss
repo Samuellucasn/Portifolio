@@ -77,7 +77,7 @@
 
         @include bgImage(url('/src/assets/saturn.png'));
 
-        animation: floating 2s infinite linear;
+        animation: floating 2s infinite linear 3s;
 
         border-radius: 0;
         margin-bottom: 100px;
@@ -115,7 +115,7 @@
         
         @include bgImage(url('/src/assets/Jupiter.png'));
 
-        animation: floating 2s infinite linear;
+        animation: floating 2s infinite linear 1s;
 
         margin-top: 100px;
     }    
