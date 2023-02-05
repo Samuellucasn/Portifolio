@@ -13,6 +13,8 @@ const Projects: React.FC<any> = () => {
             <ProjectCard thumbnail='thumbnail-four' code='https://github.com/Samuellucasn/PlayerDeMusicas' web='https://samuellucasn.github.io/PlayerDeMusicas/'/>
 
             <a href="https://github.com/Samuellucasn?tab=repositories" target={'_blank'} rel={'external'} ><button className="others" > Veja outros Projetos &gt;&gt;</button></a>
+
+            {/* <img src="/src/assets/try-japonese-wave.png" alt="as" /> */}
         </section>
     )
 }
