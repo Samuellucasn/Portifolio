@@ -20,10 +20,11 @@
     padding: 10px 200px;
 
     background-color: variables.$default-body-bg;
-    background-image: url(/src/assets/red-moon.png);
-    background-position: center bottom;
-    background-size: 400px;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(variables.$default-body-bg, variables.$default-body-bg, #2b2c487d);
+    background-image: url(/src/assets/try-1-japonese-wave-short.png);
+    background-position: left bottom;
+    background-size: 443px 150px;
+    background-repeat: repeat-x;
     
     margin: auto;
 
