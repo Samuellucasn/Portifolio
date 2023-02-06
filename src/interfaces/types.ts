@@ -26,3 +26,8 @@ export interface StampType {
     children: React.ReactNode,
     style?: React.CSSProperties,
 }
+
+export interface StarType {
+    x: string,
+    y: string
+}
