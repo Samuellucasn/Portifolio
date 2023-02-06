@@ -6,6 +6,12 @@ export interface skillProps {
     name: string
 }
 
+export interface clickArray {
+    x: number,
+    y: number, 
+    t: number
+}
+
 export interface AboutType {
     flashMensage: React.Dispatch<React.SetStateAction<boolean>>
 }

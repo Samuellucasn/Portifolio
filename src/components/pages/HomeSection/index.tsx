@@ -1,15 +1,10 @@
 import { useState, useEffect } from 'react'
+import { clickArray } from '../../../interfaces/types'
 import './style.scss'
 
 import Star from '../../Star'
 
 import {HiCursorClick} from 'react-icons/all'
-
-interface clickArray {
-    x: number,
-    y: number, 
-    t: number
-}
 
 const Home: React.FC<any> = () => {
     const [clickArray, setClickArray] = useState<clickArray[]>([])
@@ -18,10 +13,10 @@ const Home: React.FC<any> = () => {
         const interval = setInterval(() => {
             setClickArray(
                 clickArray
-                    .map((axis: any) => (
+                    .map((axis: clickArray) => (
                     {...axis, t: axis.t - 1}
                     ))
-                    .filter((axis: any) => {
+                    .filter((axis: clickArray) => {
                         return axis.t !== 0
                     })
             )
@@ -29,12 +24,10 @@ const Home: React.FC<any> = () => {
 
         return () => clearInterval(interval)
     }, [clickArray])
-    
-    console.log(clickArray)
 
     return (
         <>
-            <section className='home-main' onClick={(e: any) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 62}])}>
+            <section className='home-main' onClick={(e: React.MouseEvent<HTMLElement, MouseEvent>) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 62}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
@@ -64,7 +57,7 @@ const Home: React.FC<any> = () => {
                 </div>
             </section>
             {
-                clickArray.map( (axis: any, id: number) => {
+                clickArray.map( (axis: clickArray, id: number) => {
                     return <Star key={id} x={axis.x} y={axis.y} />
                 })
             }

@@ -2,8 +2,8 @@ import {skillProps} from '../interfaces/types'
 
 import {FaReact, FaGitAlt, FaCss3Alt, FaNodeJs, FaHtml5, FaSass, DiJavascript1, SiTypescript, SiMongodb, GrMysql} from 'react-icons/all'
 
-export const useSkillProp: (id: number) => {skillProps: Array<skillProps>, name: string} = (id) => {
-    const skillProps: Array<skillProps> = [
+export const useSkillProp: (id: number) => {skillProps: skillProps[], name: string} = (id) => {
+    const skillProps: skillProps[] = [
         {color: '#d77242', icon: FaHtml5, name: 'HTML'},
         {color: '#2284c6', icon: FaCss3Alt, name: 'CSS'},
         {color: '#eed752', icon: DiJavascript1, name: 'JavaScript'},
