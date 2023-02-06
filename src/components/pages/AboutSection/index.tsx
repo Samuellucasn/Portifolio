@@ -6,11 +6,12 @@ import {SiGmail, FaLinkedinIn, FiGithub} from 'react-icons/all'
 
 import Stamp from '../../Stamp'
 import React, { useState } from 'react'
+import { AboutType, skillProps } from '../../../interfaces/types'
 
-const Me: React.FC<any> = ({flashMensage}) => {
+const About: React.FC<AboutType> = ({flashMensage}) => {
     const [skillId, setSkillId] = useState(0)
 
-    const {skillProps, teste} = useSkillProp(skillId)
+    const {skillProps, name} = useSkillProp(skillId)
 
     return (
         <section className='about-main'>
@@ -20,11 +21,11 @@ const Me: React.FC<any> = ({flashMensage}) => {
                     <ul>
                         <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp ><FiGithub/></Stamp></a> GitHub</li>
                         <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp><FaLinkedinIn/></Stamp></a> Linkedin</li>
-                        <li><button onClick={() => {
+                        <li><a onClick={() => {
                             navigator.clipboard.writeText("samuellucasnogueira@gmail.com").then(() => {
                                 flashMensage(true)
                             })
-                        }}><Stamp><SiGmail /></Stamp></button> E-mail</li>
+                        }}><Stamp><SiGmail /></Stamp></a> E-mail</li>
                     </ul>
             </div>
                 
@@ -38,12 +39,12 @@ const Me: React.FC<any> = ({flashMensage}) => {
 
                 <h1>Tecnologias</h1>
 
-                <span><p>{teste.name}</p></span>
+                <span><p>{name}</p></span>
 
                 <div className="stack">
                     <ul>
                         {
-                            skillProps.map((v: any, i: number) => {
+                            skillProps.map((v: skillProps, i: number) => {
                                 return <li key={i} onClick={() => setSkillId(i)} ><Stamp>< v.icon style={{fill: v.color}}/></Stamp></li>
                             })
                         }
@@ -56,4 +57,4 @@ const Me: React.FC<any> = ({flashMensage}) => {
     )
 }
 
-export default Me
+export default About
