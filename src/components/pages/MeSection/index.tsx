@@ -7,7 +7,7 @@ import {SiGmail, FaLinkedinIn, FiGithub} from 'react-icons/all'
 import Stamp from '../../Stamp'
 import React, { useState } from 'react'
 
-const Me: React.FC<any> = () => {
+const Me: React.FC<any> = ({flashMensage}) => {
     const [skillId, setSkillId] = useState(0)
 
     const {skillProps, teste} = useSkillProp(skillId)
@@ -21,9 +21,10 @@ const Me: React.FC<any> = () => {
                         <li><a href='https://github.com/Samuellucasn' target={'_blank'} rel={'external'}><Stamp ><FiGithub/></Stamp></a> GitHub</li>
                         <li><a href='https://www.linkedin.com/in/samuel-lucas-515b12218/' target={'_blank'} rel={'external'}><Stamp><FaLinkedinIn/></Stamp></a> Linkedin</li>
                         <li><button onClick={() => {
-                            navigator.clipboard.writeText("samuellucasnogueira@gmail.com")
-                            alert()
-                            }}><Stamp><SiGmail /></Stamp></button> E-mail</li>
+                            navigator.clipboard.writeText("samuellucasnogueira@gmail.com").then(() => {
+                                flashMensage(true)
+                            })
+                        }}><Stamp><SiGmail /></Stamp></button> E-mail</li>
                     </ul>
             </div>
                 

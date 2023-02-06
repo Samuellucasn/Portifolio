@@ -21,34 +21,35 @@ function App() {
     })
   }, [])
 
+  setTimeout(() => {
+    setRenderFlashMensage(false)
+  }, 5000)
+
   return (
     <>
-      {
+    {
       renderFlashMensage && 
         <div className='flash-mensage'>
           <span>endereço de email copiado</span>
         </div>
     }
-    {/* <header>
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Me</a></li>
-            <li><a href="">Projects</a></li>
-          </ul>
-        </nav>
-    </header> */}
 
     <main>
       <Home />
-      <Me flashMensage={renderFlashMensage}/>
+      <Me flashMensage={setRenderFlashMensage}/>
       <Projects />
     </main>
 
     <footer>
       <p>Rio de Janeiro - RJ</p>
 
-      <div className="email-copy" onClick={() => setRenderFlashMensage(true)}>
+      <div className="email-copy" onClick={() => 
+        {
+          navigator.clipboard.writeText("samuellucasnogueira@gmail.com").then(() => {
+            setRenderFlashMensage(true)
+          })
+        }
+      }>
         <span>samuellucasnogueira@gmail.com</span>
       </div>
       <div className="contact-icons">
