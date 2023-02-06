@@ -17,14 +17,15 @@
 }
 
 .projects {
-    padding: 10px 200px;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 30px 200px;
 
     background-color: variables.$default-body-bg;
     background-image: linear-gradient(variables.$default-body-bg, variables.$default-body-bg, #2b2c487d);
-    background-image: url(/src/assets/try-1-japonese-wave-short.png);
-    background-position: left bottom;
-    background-size: 443px 150px;
-    background-repeat: repeat-x;
+    background-image: url(/src/assets/red-moon.png);
+    background-position: center bottom;
+    background-size: 400px;
+    background-repeat: no-repeat;
     
     margin: auto;
 
@@ -86,6 +87,9 @@
         .others {
             width: 160px;
         }
+
+        background-image: none;
+        padding-bottom: 20px;
     }
 
 }
