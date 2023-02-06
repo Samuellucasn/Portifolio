@@ -1,6 +1,6 @@
 @use '/src/style/variables.scss' as variables;
 
-@mixin wrapper-display {
+@mixin flexbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +13,6 @@
     border-radius: 50%;
 
     z-index: 20;
-
-    position: sticky;
 }
 
 .home-main {
@@ -27,15 +25,14 @@
     .background {
         background-color: #070707;
         background-image: url(/src/assets/estrelasFundo.png);
-        background-size: 90vh;
     
-        height: 2000px;
+        height: 2200px;
         width: 100%;
         z-index: -1000;
         position: absolute;
         top: 0;
     
-        animation: parallax 100s linear infinite 0s;
+        animation: parallax 100s linear infinite ;
     }
     
     .welcome-text {
@@ -45,7 +42,7 @@
 
         z-index: 30;
 
-        color: #d4d4d4;
+        color: #fff;
 
         animation: welcome-opacity 5s ease-in;
         
@@ -53,13 +50,13 @@
             font-size: 1em;  
             margin-left: 20px; 
 
-            border-bottom: 1px solid #d4d4d4;
+            border-bottom: 1px solid #fff;
         }
 
         h1 {
             font-size: 5.5em;
 
-            color: #000;
+            color: #070707;
 
             -webkit-text-stroke: #fff 1px;
         }
@@ -69,7 +66,7 @@
 .saturn-wrapper {
     width: 50%;
 
-    @include wrapper-display;
+    @include flexbox;
 
     .saturn {
         width: 220px;
@@ -94,7 +91,6 @@
         transform-style: preserve-3d;
 
         border: 1px solid #fff;
-        background-image: url(/src/assets/estrelasFundo.png);
         border-radius: 50%;
         box-shadow: -1px 1px 20px 1px white;
         
@@ -107,7 +103,7 @@
 .jupiter-wrapper {
     width: 50%;
 
-    @include wrapper-display;
+    @include flexbox;
 
     .jupiter {
         width: variables.$jupiter-height-width;
@@ -124,7 +120,7 @@
 .earth-wrapper {
     width: 100vw;
 
-    @include wrapper-display;
+    @include flexbox;
 
     .earth {
         width: variables.$earth-height-width;
@@ -133,8 +129,6 @@
         @include bgImage(url('/src/assets/terra2.png'));
 
         animation: rotate 200s linear infinite;
-
-        cursor: pointer;
     }
 
     .moon-wrapper {
@@ -152,7 +146,6 @@
     
             margin: 20px;
             border-radius: 50%;
-
         }
     }
 }
@@ -179,7 +172,7 @@
 
 @media (max-width: 580px) {
     .home-main {
-        height: 98vh;
+        height: 97vh;
         .welcome-text {
             left: 100px;
     
@@ -204,8 +197,8 @@
 
 @media (max-width: 520px) {
     .home-main{
-
         flex-direction: column;
+
         .saturn-wrapper {
             width: 100%;
 
@@ -228,6 +221,7 @@
                 top: 10px;
             }
         }
+
         .jupiter-wrapper {
             width: 100%;
 
@@ -241,6 +235,7 @@
                 height: 150px;
             }
         }
+
         .earth-wrapper {
             padding: 70px 0;
 
@@ -249,6 +244,7 @@
                 height: 20px;
             }
         }
+        
         .welcome-text {
             left: 20px;
 

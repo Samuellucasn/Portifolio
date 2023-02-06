@@ -47,6 +47,18 @@
     }
 }
 
+@keyframes bright {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes click-star {
     50% {
         opacity: .2;

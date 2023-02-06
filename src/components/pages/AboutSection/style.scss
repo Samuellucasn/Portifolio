@@ -5,8 +5,6 @@
     color: #fff;
 
     border-top: 1px solid white;
-
-    box-shadow: 1px 1px 1px 1px white;
     
     display: flex;
     flex-wrap: wrap;
@@ -53,8 +51,8 @@
     }
 
     .contacts {
-    
         margin-top: 15px;
+        
         ul {
             display: flex;
             gap: 20px;
