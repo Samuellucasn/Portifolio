@@ -15,3 +15,14 @@ export interface clickArray {
 export interface AboutType {
     flashMensage: React.Dispatch<React.SetStateAction<boolean>>
 }
+
+export interface ProjectCardType {
+    thumbnail: string,
+    code: string,
+    web: string
+}
+
+export interface StampType {
+    children: React.ReactNode,
+    style?: React.CSSProperties,
+}

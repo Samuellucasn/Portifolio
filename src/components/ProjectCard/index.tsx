@@ -1,8 +1,9 @@
+import { ProjectCardType } from '../../interfaces/types'
 import './style.scss'
 
 import {FiGithub, MdComputer} from 'react-icons/all'
 
-const ProjectCard: React.FC<any> = ({thumbnail, code, web}) => {
+const ProjectCard: React.FC<ProjectCardType> = ({thumbnail, code, web}) => {
     return (
         <div className='project' data-aos="zoom-in">
                 <div className='header' />

@@ -2,7 +2,7 @@ import './style.scss'
 
 import ProjectCard from '../../ProjectCard'
 
-const Projects: React.FC<any> = () => {
+const Projects: React.FC = () => {
     return (
         <section className='projects'>
             <h1>Projetos</h1>
