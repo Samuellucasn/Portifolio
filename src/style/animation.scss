@@ -52,3 +52,9 @@
         opacity: .2;
     }
 }
+
+@keyframes flash-mensage {
+    100% {
+        opacity: 0;
+    }
+}
