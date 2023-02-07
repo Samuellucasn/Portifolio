@@ -39,7 +39,7 @@ const About: React.FC<AboutType> = ({flashMensage}) => {
 
                 <h1>Tecnologias</h1>
 
-                <span><p>{name}</p></span>
+                <span><p className='skill-name'>{name}</p></span>
 
                 <div className="stack">
                     <ul>
