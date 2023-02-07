@@ -128,13 +128,6 @@
     p {
         max-width: 400px;
     }
-
-    .skill-name {
-        & ::before {
-            content: "-as";
-            color: #fff;
-        }
-    }
 }
 
 @media (max-width: 720px) {

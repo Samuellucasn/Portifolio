@@ -23,8 +23,7 @@ export interface ProjectCardType {
 }
 
 export interface StampType {
-    children: React.ReactNode,
-    style?: React.CSSProperties,
+    children: React.ReactNode
 }
 
 export interface StarType {

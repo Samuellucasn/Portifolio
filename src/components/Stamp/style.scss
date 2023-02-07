@@ -18,3 +18,9 @@
         color: #000;
     }
 }
+
+@media (max-width: 600px) {
+    .stamp {
+        cursor: default;
+    }
+}

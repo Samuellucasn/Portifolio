@@ -1,9 +1,9 @@
 import { StampType } from '../../interfaces/types'
 import './style.scss'
 
-const Stamp : React.FC<StampType> = ({children, style}) => {
+const Stamp : React.FC<StampType> = ({children}) => {
     return (
-        <div className='stamp' style={style}>
+        <div className='stamp' >
             {children}
         </div>
     )
