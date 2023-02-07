@@ -23,7 +23,7 @@ function App() {
 
   setTimeout(() => {
     setRenderFlashMensage(false)
-  }, 4000)
+  }, 3000)
 
   return (
     <>

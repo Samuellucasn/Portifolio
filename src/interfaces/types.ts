@@ -28,6 +28,6 @@ export interface StampType {
 }
 
 export interface StarType {
-    x: string,
-    y: string
+    x: number,
+    y: number
 }

@@ -27,7 +27,7 @@ const Home: React.FC<any> = () => {
 
     return (
         <>
-            <section className='home-main' onClick={(e: React.MouseEvent<HTMLElement, MouseEvent>) => setClickArray([...clickArray, {x: e.clientX, y: e.clientY, t: 62}])}>
+            <section className='home-main' onClick={(e: React.MouseEvent<HTMLElement, MouseEvent>) => setClickArray([...clickArray, {x: e.pageX, y: e.pageY, t: 62}])}>
 
                 <div className="saturn-wrapper">
                     <div className='saturn' >
