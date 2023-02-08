@@ -17,7 +17,7 @@ const Home: React.FC<any> = () => {
                     {...axis, t: axis.t - .1}
                     ))
                     .filter((axis: clickArray) => {
-                        return axis.t < 1 
+                        return axis.t > 1 
                     })
             )
         }, 100)
