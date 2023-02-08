@@ -14,16 +14,18 @@ const Home: React.FC<any> = () => {
             setClickArray(
                 clickArray
                     .map((axis: clickArray) => (
-                    {...axis, t: axis.t - 1}
+                    {...axis, t: axis.t - .1}
                     ))
                     .filter((axis: clickArray) => {
-                        return axis.t !== 0
+                        return axis.t < 1 
                     })
             )
-        }, 1000)
+        }, 100)
 
+        
         return () => clearInterval(interval)
     }, [clickArray])
+    console.log(clickArray)
 
     return (
         <>
