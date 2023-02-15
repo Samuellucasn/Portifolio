@@ -195,7 +195,18 @@
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 900px) {
+    .home-main .click-star {
+        width: 100vw;
+
+        margin: 0;
+
+        align-self: flex-end;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
     .home-main{
         flex-direction: column;
 
@@ -249,10 +260,6 @@
             left: 20px;
 
             font-size: 12px;
-        }
-
-        .click-star {
-            display: none;
         }
     }
 }
